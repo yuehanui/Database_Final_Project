@@ -56,7 +56,7 @@
 <dataTypeSize>6</dataTypeSize>
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="H_PAYAMOUNT" id="6D955A55-D60C-DB96-3A60-1D6768DFE744">
+<Attribute name="H_PAY_AMOUNT" id="6D955A55-D60C-DB96-3A60-1D6768DFE744">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:00:14 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home insurance's payment amount]]></commentInRDBMS>
@@ -84,7 +84,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -92,8 +92,9 @@
 <createdBy>yuehan</createdBy>
 <createdTime>2020-04-06 19:16:05 UTC</createdTime>
 <ownerDesignName>proejct1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

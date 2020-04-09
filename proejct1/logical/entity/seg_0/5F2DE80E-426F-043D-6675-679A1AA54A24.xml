@@ -14,6 +14,9 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>141D3FB5-8DFC-8B26-5267-873B9558E9AB</discriminatorAttributeID>
+<completeSubtypes>true</completeSubtypes>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="C_ID" id="581710F2-568A-4972-0C50-D9BF2BBF2F44">
 <createdBy>71918</createdBy>
@@ -162,8 +165,9 @@
 <createdBy>71918</createdBy>
 <createdTime>2020-04-04 23:49:00 UTC</createdTime>
 <ownerDesignName>proejct1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

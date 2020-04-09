@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VEHICLE_ID" id="95283DF5-E38D-A23F-FC1B-7F7E324C00D8">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-09 07:32:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique numerical identifier of the vehice]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="VIN" id="F5C88741-1116-E843-AFBA-A2A8FCD5B632">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:07:50 UTC</createdTime>
@@ -25,9 +39,9 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="MAKE_YEAR" id="2B046C25-2C98-6F52-44EF-B743916A226D">
 <createdBy>71918</createdBy>
@@ -78,12 +92,13 @@
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:08:14 UTC</createdTime>
 <ownerDesignName>proejct1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>F5C88741-1116-E843-AFBA-A2A8FCD5B632</attributeRef>
+<attributeRef>95283DF5-E38D-A23F-FC1B-7F7E324C00D8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -42,7 +42,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="A_DUE_DATE" id="1644EBCD-1A8D-AA0F-EDA1-766F4A57A112">
+<Attribute name="A_INV_DUE_DATE" id="1644EBCD-1A8D-AA0F-EDA1-766F4A57A112">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 18:42:56 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's payment due date]]></commentInRDBMS>
@@ -91,8 +91,9 @@
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 18:40:16 UTC</createdTime>
 <ownerDesignName>proejct1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

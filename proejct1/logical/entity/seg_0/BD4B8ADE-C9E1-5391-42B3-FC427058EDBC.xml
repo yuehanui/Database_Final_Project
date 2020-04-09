@@ -15,8 +15,10 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<discriminatorColumnName>H</discriminatorColumnName>
+<completeSubtypes>true</completeSubtypes>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="H_STARTDATE" id="CEEEAD96-AF9B-0085-F60F-9DED5C1EE472">
+<Attribute name="H_START_DATE" id="CEEEAD96-AF9B-0085-F60F-9DED5C1EE472">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-04 23:55:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home insurance's start date]]></commentInRDBMS>
@@ -29,7 +31,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="H_ENDDATE" id="A703D3B0-A6C6-94CF-5C54-3D186C8570E0">
+<Attribute name="H_END_DATE" id="A703D3B0-A6C6-94CF-5C54-3D186C8570E0">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-04 23:56:55 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home insurance's end date]]></commentInRDBMS>

@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87CA7460-2BD1-4256-ABBB-4443A1AA8AD3" name="VEHICLE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87386D04-4573-DB42-3FC9-B8FDC5BF9D6E" name="VEHICLE">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>4B62D44D-6D58-9588-0AB5-C8F9F4EBD01E</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="VIN" id="95140E64-FAE0-2DCA-59B3-D157AB8EBA9E">
+<Column name="VEHICLE_ID" id="4B12AEB2-7EB0-A31E-A4F1-FFBE4ADF4405">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Vehicle identification number.]]></commentInRDBMS>
-<generatorID>F5C88741-1116-E843-AFBA-A2A8FCD5B632</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique numerical identifier of the vehice]]></commentInRDBMS>
+<generatorID>95283DF5-E38D-A23F-FC1B-7F7E324C00D8</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,9 +21,22 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MAKE_YEAR" id="0EF31CDB-8246-9095-B2E1-400FC0DD1F5B">
+<Column name="VIN" id="E2E62A18-F748-8F76-FFA2-D99BCF2BC030">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vehicle identification number.]]></commentInRDBMS>
+<generatorID>F5C88741-1116-E843-AFBA-A2A8FCD5B632</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAKE_YEAR" id="6BF163BF-F34F-FF64-8998-853D09196C49">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <commentInRDBMS><![CDATA[Vehicle's make-model-year]]></commentInRDBMS>
 <generatorID>2B046C25-2C98-6F52-44EF-B743916A226D</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -34,9 +47,9 @@
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="V_STATUS" id="9E0FAB7A-FED7-18F6-EEA9-6CF45F94FDDE">
+<Column name="V_STATUS" id="443E13F1-20F7-AB78-341C-C1E7E546DE5B">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <commentInRDBMS><![CDATA[Status of vehicle. “L”, “F”, or “O” representing “Leased”, Financed”, “and Owned’.]]></commentInRDBMS>
 <generatorID>CB7537FD-5FF1-02FD-2C28-35B6A3C425E6</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -47,9 +60,9 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_ID" id="AF2F0D8C-575C-802B-D538-8F216979B3C6">
+<Column name="C_ID" id="659D7A1C-B35C-FC2D-73F6-8F1C2012A2B6">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>1DEE41FA-2EFC-E30E-6C34-91AB51F06441</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,32 +73,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="5BFE8462-16F7-73FB-0931-767E845C724E" referredColumn="E16A22A5-225E-96BD-8A1D-1F592BFEB6A5"/>
+<colAssociation fkAssociation="7DD6783E-A5CC-794E-6B12-47C314124B9D" referredColumn="3A77D7E5-83BF-8BC6-8260-DDB4AC96FFD4"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="4A5EB55A-8061-6351-FE6C-2F3594A0B7A4" name="VEHICLE_PK">
+<ind_PK_UK id="711BC1FE-081A-5264-8ADD-493D44144B25" name="VEHICLE_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>9B256230-A752-01A7-5912-4C40F442E7F8</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="95140E64-FAE0-2DCA-59B3-D157AB8EBA9E"/>
+<colUsage columnID="4B12AEB2-7EB0-A31E-A4F1-FFBE4ADF4405"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DA297FBF-691C-C7E5-FD10-58B76D50A037" name="VEHICLE_AUTO_INSURANCE_FK">
+<ind_PK_UK id="D08531EC-2C53-E7F5-D286-D6B86F330842" name="VEHICLE_AUTO_INSURANCE_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>3C8CF998-764C-86B6-F288-5DC1C1F7E6B3</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="AF2F0D8C-575C-802B-D538-8F216979B3C6"/>
+<colUsage columnID="659D7A1C-B35C-FC2D-73F6-8F1C2012A2B6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

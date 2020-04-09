@@ -1,32 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DA03C4A-2F97-C005-507B-2E136830B89B" name="VEHICLE_DRIVER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D073D367-C176-A23B-168A-C40DC8904040" name="VEHICLE_DRIVER">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>10D6678F-AA72-44DB-1FD1-14E7C86A1395</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="VIN" id="B807C348-B7A7-B55B-D40C-FBF272EA4BC0">
+<Column name="DRIVER_ID" id="03B9FAC3-47CE-D713-C8F1-3500F6F83965">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<generatorID>BE178D51-12EE-4422-62CE-94E605B300FB</generatorID>
-<ownerDesignName>proejct1</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="EC0AE7F1-25E5-46F5-6F64-65498DEC8674" referredColumn="95140E64-FAE0-2DCA-59B3-D157AB8EBA9E"/>
-</associations>
-</Column>
-<Column name="DRIVER_ID" id="FE0EC101-C8E9-4617-EC8B-96159956524D">
-<createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>F2EA59FC-E579-F2EC-E3FF-B77696F98562</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -37,44 +21,60 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="15F07D4B-9339-D435-72E4-93414D7CBD10" referredColumn="2E655E6C-4929-AAF4-40DD-3C0C217BF036"/>
+<colAssociation fkAssociation="FF294512-16B8-3639-3FE6-28028C4A0646" referredColumn="44C52713-656F-277E-D7C6-9ED3405E3047"/>
+</associations>
+</Column>
+<Column name="VEHICLE_ID" id="5EB90652-BED7-DD02-E401-4B5EDAA8759C">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<generatorID>3AD9AA8D-785D-BBE5-AA12-6E31BD50325E</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C7CE38F-071A-FAEF-1214-35ABA0609A66" referredColumn="4B12AEB2-7EB0-A31E-A4F1-FFBE4ADF4405"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="81D05CCF-BFB3-6E03-949D-6AF39438F86A" name="VEHICLE_DRIVER_PK">
+<ind_PK_UK id="A02129CC-613E-15D5-741C-30F0C0D95654" name="VEHICLE_DRIVER_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>1BB3F5A7-F519-EA89-1547-9CABCF7B30C8</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B807C348-B7A7-B55B-D40C-FBF272EA4BC0"/>
-<colUsage columnID="FE0EC101-C8E9-4617-EC8B-96159956524D"/>
+<colUsage columnID="03B9FAC3-47CE-D713-C8F1-3500F6F83965"/>
+<colUsage columnID="5EB90652-BED7-DD02-E401-4B5EDAA8759C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EC799A54-9F8D-8F97-6567-6861F5A95BF1" name="VEHICLE_DRIVER_VEHICLE_FK">
+<ind_PK_UK id="3165285D-91CF-A0D0-BB31-D5F3A0F63649" name="VEHICLE_DRIVER_VEHICLE_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>561AD408-0BC9-34B6-8DF7-6E1CF3DD6ACC</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B807C348-B7A7-B55B-D40C-FBF272EA4BC0"/>
+<colUsage columnID="5EB90652-BED7-DD02-E401-4B5EDAA8759C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6F00F5D0-FE8E-21CD-8C15-9EFFC9E9EF7B" name="VEHICLE_DRIVER_DRIVER_FK">
+<ind_PK_UK id="3712ED15-5678-ACE7-A8DD-6C0804CDB92F" name="VEHICLE_DRIVER_DRIVER_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
 <generatorID>7B55BCFA-56E3-AE53-3AE3-6993B3D3148F</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FE0EC101-C8E9-4617-EC8B-96159956524D"/>
+<colUsage columnID="03B9FAC3-47CE-D713-C8F1-3500F6F83965"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -15,21 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="VIN" id="BE178D51-12EE-4422-62CE-94E605B300FB">
-<createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:04:29 UTC</createdTime>
-<generatorID>561AD408-0BC9-34B6-8DF7-6E1CF3DD6ACC</generatorID>
-<ownerDesignName>proejct1</ownerDesignName>
-<engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
-</engineerTo>
-<referedAttribute>F5C88741-1116-E843-AFBA-A2A8FCD5B632</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="DRIVER_ID" id="F2EA59FC-E579-F2EC-E3FF-B77696F98562">
 <createdBy>yuehan</createdBy>
 <createdTime>2020-04-09 02:04:35 UTC</createdTime>
@@ -43,6 +28,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VEHICLE_ID" id="3AD9AA8D-785D-BBE5-AA12-6E31BD50325E">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-09 07:35:29 UTC</createdTime>
+<generatorID>561AD408-0BC9-34B6-8DF7-6E1CF3DD6ACC</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<referedAttribute>95283DF5-E38D-A23F-FC1B-7F7E324C00D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -51,15 +51,14 @@
 <createdBy>yuehan</createdBy>
 <createdTime>2020-04-09 02:04:47 UTC</createdTime>
 <ownerDesignName>proejct1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BE178D51-12EE-4422-62CE-94E605B300FB</attributeRef>
 <attributeRef>F2EA59FC-E579-F2EC-E3FF-B77696F98562</attributeRef>
-<attributeRef>BE178D51-12EE-4422-62CE-94E605B300FB</attributeRef>
-<attributeRef>F2EA59FC-E579-F2EC-E3FF-B77696F98562</attributeRef>
+<attributeRef>3AD9AA8D-785D-BBE5-AA12-6E31BD50325E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

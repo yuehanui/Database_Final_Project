@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<InheritanceRelation class="oracle.dbtools.crest.model.design.logical.InheritanceRelation" name="Hierarchy_2" directorySegmentName="seg_0" id="0E9F8898-0B39-9992-E23F-EDD140191092">
-<createdBy>71918</createdBy>
-<createdTime>2020-04-05 00:07:43 UTC</createdTime>
-<ownerDesignName>final project 1</ownerDesignName>
+<InheritanceRelation class="oracle.dbtools.crest.model.design.logical.InheritanceRelation" name="Hierarchy_3" directorySegmentName="seg_0" id="607FFA93-2E8A-941C-53E0-26250D28DC63">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-09 02:57:57 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
 <engineerTo>
 <item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
 </engineerTo>

@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A87384C0-D19B-EAC0-4DA8-33F3B248FF6F" name="H_INVOICE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7D9057D-0FFE-74D7-16B5-24B299BAE93B" name="A_INVOICE">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<generatorID>87F1D453-9F57-470A-C4D3-8CA6AC6CC5D1</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<generatorID>EEDBB9A4-AA1A-37CD-3CA1-8975D56E0917</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="H_INV_ID" id="9266E990-8461-1007-4C78-82BE3300FE83">
+<Column name="A_INV_ID" id="B004D939-B695-B807-8B63-55E379D9A634">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Home insurance's invoice number]]></commentInRDBMS>
-<generatorID>0957ECA9-376F-75E2-2BC1-9F58C821B45B</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice number]]></commentInRDBMS>
+<generatorID>8465543B-B217-D3A0-9650-3E02994558DB</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,11 +21,11 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="H_INV_DATE" id="B4C68E4A-2DBF-B64D-95AE-75D58AF6E2F6">
+<Column name="A_INV_DATE" id="BACC46D2-8A4E-6B3F-69A6-380DC76277F8">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Home insurance's invoice date]]></commentInRDBMS>
-<generatorID>74028A25-1D95-CA5C-2F94-2BAA5B464FB6</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice date]]></commentInRDBMS>
+<generatorID>C5919DDF-AD9E-C033-0547-1B2920009B8F</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,11 +33,11 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="H_INV_DUE_DATE" id="1F9A9877-5FE1-2AA9-5583-7422845727A6">
+<Column name="A_INV_DUE_DATE" id="4F2D90D6-A65C-429A-BBFC-0261857DCD0A">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Home insurance's payment due date]]></commentInRDBMS>
-<generatorID>F8A8FCF5-B1B6-02BC-7F2E-84D886FC50AD</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's payment due date]]></commentInRDBMS>
+<generatorID>1644EBCD-1A8D-AA0F-EDA1-766F4A57A112</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -45,11 +45,11 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="H_INV_AMOUNT" id="752EFA46-E402-F2E1-8A5D-88EF59B0A61E">
+<Column name="A_INV_AMOUNT" id="707856D7-0319-00FB-709D-06030D95622B">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Home insurance's invoice amount]]></commentInRDBMS>
-<generatorID>454FF21C-6FF5-D66E-46BC-5B6F8C486B5F</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice amount]]></commentInRDBMS>
+<generatorID>6BF3D442-5157-F1A9-48B6-7595EDD63EDB</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,10 +59,10 @@
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_ID" id="B6D6653D-2AC9-9133-646C-7EBAEA4DCDE7">
+<Column name="C_ID" id="CB5B6444-BDEF-379C-9216-3E2C47120BA8">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<generatorID>03683A8A-E7E6-63B7-0CCD-8F553C330665</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<generatorID>B1F42530-32FC-22F4-ED1F-DF6CDF087146</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,32 +72,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="3DF85A02-2721-D51C-A4EE-1C3A8A9EB38C" referredColumn="8417F3A5-3B45-177C-6ACF-0A7877848D89"/>
+<colAssociation fkAssociation="A0DD5D81-2FDB-331E-20F5-6433D5272250" referredColumn="3A77D7E5-83BF-8BC6-8260-DDB4AC96FFD4"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D7A47977-56E6-8A43-8065-AAA0F31BFD3A" name="H_INVOICE_PK">
+<ind_PK_UK id="67B92395-9F8E-3569-5F36-19D08C8B4727" name="A_INVOICE_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<generatorID>17CD7FAA-72DC-BBE0-4A0B-830BB43D6CA2</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<generatorID>342FB7C5-10AA-F396-4802-3F4E31A91D17</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9266E990-8461-1007-4C78-82BE3300FE83"/>
+<colUsage columnID="B004D939-B695-B807-8B63-55E379D9A634"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A60497A9-B845-D96B-242D-02C05051F8FF" name="H_INVOICE_HOME_INSURANCE_FK">
+<ind_PK_UK id="D44CCAD5-2533-7378-0823-0C5E6DCED7C3" name="A_INVOICE_AUTO_INSURANCE_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 02:05:52 UTC</createdTime>
-<generatorID>BA42D727-D751-78B9-E0AB-91645AB089CE</generatorID>
+<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<generatorID>D15AADEE-34BC-C45D-032A-DD64979B2696</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B6D6653D-2AC9-9133-646C-7EBAEA4DCDE7"/>
+<colUsage columnID="CB5B6444-BDEF-379C-9216-3E2C47120BA8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

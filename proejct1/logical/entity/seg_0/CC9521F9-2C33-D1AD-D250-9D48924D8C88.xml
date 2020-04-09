@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="A_PAYMENTNO" id="DF1F650B-49CB-7D2C-9681-37BD9CEE3B8C">
+<Attribute name="A_PAYMENT_ID" id="DF1F650B-49CB-7D2C-9681-37BD9CEE3B8C">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:02:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's payment number]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="A_PAYDATE" id="17D5B6BA-76DD-1B8F-ACE3-E2B932F6ECDE">
+<Attribute name="A_PAY_DATE" id="17D5B6BA-76DD-1B8F-ACE3-E2B932F6ECDE">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:02:45 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's payment date]]></commentInRDBMS>
@@ -42,7 +42,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="A_PAYMETHOD" id="72F63AC5-4399-AE42-95B3-3BFEC2263894">
+<Attribute name="A_PAY_METHOD" id="72F63AC5-4399-AE42-95B3-3BFEC2263894">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:03:24 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's method of payment. The pamyment method shoud be one of the following:“PayPal”, “Credit”, “Debit”, “Check”.]]></commentInRDBMS>
@@ -91,8 +91,9 @@
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:02:32 UTC</createdTime>
 <ownerDesignName>proejct1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
