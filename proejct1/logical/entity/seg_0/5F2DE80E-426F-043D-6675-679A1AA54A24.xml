@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F2DE80E-426F-043D-6675-679A1AA54A24" name="CUSTOMER">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:48:12 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<generateDiscrimColumn>true</generateDiscrimColumn>
+<discriminatorAttributeID>141D3FB5-8DFC-8B26-5267-873B9558E9AB</discriminatorAttributeID>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="C_ID" id="581710F2-568A-4972-0C50-D9BF2BBF2F44">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:48:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer's ID]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_FNAME" id="FFE775E0-C626-A434-4957-CFCCD2AB60DB">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:48:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer's first name]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_LNAME" id="0823ABBE-5F44-C598-FF32-6B4581D8FDDF">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:49:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer's last name]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENDER" id="CC70D5C1-D6DA-78ED-1A46-42C54F83417C">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:51:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer's gender. “M”, or “F” representing “Male” or “Female” respectively.]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MARTIAL_STA" id="31979B85-5BA0-A509-10ED-6C00DFC71344">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:52:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer's martial status. “M”, “S”, or “W”, representing “Married”, “Single”, and “Widow/Widower” respectively. ]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_TYPE" id="141D3FB5-8DFC-8B26-5267-873B9558E9AB">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:53:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer type]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_STREET_AD" id="D8276E8F-024D-BF35-30FA-EAE93EE19C95">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 19:22:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer's street  address]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_CITY" id="AEC36F3B-C29C-9401-970B-F29139445D41">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-05 20:54:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[The city of the customer's address]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_STATE" id="77727595-B35C-0506-752F-705633174644">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-05 20:55:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The state abbr of the customer's address]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_ZIPCODE" id="7B426A60-18B0-8B73-B2D7-B7BE7CAE5473">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-05 20:55:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[ The 5-digit zip code of the customer's address]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9193DD57-DBE1-CACB-5A5A-8AB7654F0203" name="CUSTOMER PK">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:49:00 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>581710F2-568A-4972-0C50-D9BF2BBF2F44</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

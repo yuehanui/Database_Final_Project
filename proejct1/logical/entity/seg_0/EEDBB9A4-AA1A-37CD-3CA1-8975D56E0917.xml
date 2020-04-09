@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EEDBB9A4-AA1A-37CD-3CA1-8975D56E0917" name="A_INVOICE">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:39:44 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="A_INV_ID" id="8465543B-B217-D3A0-9650-3E02994558DB">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:39:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice number]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="A_INV_DATE" id="C5919DDF-AD9E-C033-0547-1B2920009B8F">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:40:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="A_DUE_DATE" id="1644EBCD-1A8D-AA0F-EDA1-766F4A57A112">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:42:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's payment due date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="A_INV_AMOUNT" id="6BF3D442-5157-F1A9-48B6-7595EDD63EDB">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:43:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice amount]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_ID" id="B1F42530-32FC-22F4-ED1F-DF6CDF087146">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:44:54 UTC</createdTime>
+<generatorID>D15AADEE-34BC-C45D-032A-DD64979B2696</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<referedAttribute>581710F2-568A-4972-0C50-D9BF2BBF2F44</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="342FB7C5-10AA-F396-4802-3F4E31A91D17" name="A_INVOICE PK">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:40:16 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8465543B-B217-D3A0-9650-3E02994558DB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

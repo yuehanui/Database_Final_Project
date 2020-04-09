@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B63A30DC-4182-91C8-FDF7-B598FA1F2709" containerWithKeyObject="DBAE7C14-8867-4C07-084D-BE4516A87471" localFKIndex="453A4AF7-23C1-513D-543B-ACCF7638CEE0" name="A_INVOICE_AUTO_INSURANCE_FK">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<generatorID>D15AADEE-34BC-C45D-032A-DD64979B2696</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<referredTableLongName>AUTO_INSURANCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94976043-D08B-0528-56C7-863BA68D9B1C</referredTableID>
+<keyObject>9B6CD500-FCFE-831E-6813-0332BF0D89E6</keyObject>
+<referredKeyID>9B6CD500-FCFE-831E-6813-0332BF0D89E6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>C_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

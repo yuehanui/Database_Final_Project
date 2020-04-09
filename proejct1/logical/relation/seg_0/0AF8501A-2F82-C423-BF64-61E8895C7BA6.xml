@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_HOME INSURANCE_HOME" directorySegmentName="seg_0" id="0AF8501A-2F82-C423-BF64-61E8895C7BA6">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:27:28 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<sourcePk>9193DD57-DBE1-CACB-5A5A-8AB7654F0203</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BD4B8ADE-C9E1-5391-42B3-FC427058EDBC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7C077E16-EECA-6463-330B-EB703569470A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

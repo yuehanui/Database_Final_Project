@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBAE7C14-8867-4C07-084D-BE4516A87471" name="A_INVOICE">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<generatorID>EEDBB9A4-AA1A-37CD-3CA1-8975D56E0917</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="A_INV_ID" id="C151D333-7386-593F-4C96-2B2CF4003FEB">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice number]]></commentInRDBMS>
+<generatorID>8465543B-B217-D3A0-9650-3E02994558DB</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="A_INV_DATE" id="653C18FC-6E12-D3A2-590E-784DD343C77B">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice date]]></commentInRDBMS>
+<generatorID>C5919DDF-AD9E-C033-0547-1B2920009B8F</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="A_DUE_DATE" id="FEF3E9F1-5D1F-D5A2-7518-71D2F119E77B">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's payment due date]]></commentInRDBMS>
+<generatorID>1644EBCD-1A8D-AA0F-EDA1-766F4A57A112</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="A_INV_AMOUNT" id="0FC744AB-12F7-38CD-CA2B-7B23E35E6A3F">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's invoice amount]]></commentInRDBMS>
+<generatorID>6BF3D442-5157-F1A9-48B6-7595EDD63EDB</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTO_INSURANCE_C_ID" id="FFDB2C44-F5B1-A052-81DB-E4BE8E653683">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<generatorID>B1F42530-32FC-22F4-ED1F-DF6CDF087146</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B63A30DC-4182-91C8-FDF7-B598FA1F2709" referredColumn="84EFE4C5-E2F3-A960-049A-551A61E5A6D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D498755-198F-C897-E3F4-4E9F884E84EF" name="A_INVOICE_PK">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<generatorID>342FB7C5-10AA-F396-4802-3F4E31A91D17</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C151D333-7386-593F-4C96-2B2CF4003FEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="453A4AF7-23C1-513D-543B-ACCF7638CEE0" name="A_INVOICE_AUTO_INSURANCE_FK">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<generatorID>D15AADEE-34BC-C45D-032A-DD64979B2696</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFDB2C44-F5B1-A052-81DB-E4BE8E653683"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

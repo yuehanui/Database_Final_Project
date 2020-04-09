@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="68A3A539-BF7F-4AEC-934D-49DCC4C1BC71" name="AUTO INSURANCE">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:03:50 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>5F2DE80E-426F-043D-6675-679A1AA54A24</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorValue>A</discriminatorValue>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="A_START_DATE" id="0466E107-2332-C1A1-B746-BCD283B38B38">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:03:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's start date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="A_END_DATE" id="D09BA886-2AF4-35FB-B652-9243B5494828">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:04:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's end date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="A_PREMIUM" id="73B97F27-D73E-642F-B85F-77D0252B0079">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:05:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto insurance's premium amount]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="A_STATUS" id="A4BC0335-EE67-2D29-6AF8-4F9DCCB3A6BC">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:06:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Auto policy insurance status. "C" for current and "P" for expired.]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

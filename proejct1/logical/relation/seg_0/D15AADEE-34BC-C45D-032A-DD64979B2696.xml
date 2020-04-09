@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AUTO INSURANCE_A_INVOICE" directorySegmentName="seg_0" id="D15AADEE-34BC-C45D-032A-DD64979B2696">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:44:54 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<sourcePk>9193DD57-DBE1-CACB-5A5A-8AB7654F0203</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>68A3A539-BF7F-4AEC-934D-49DCC4C1BC71</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EEDBB9A4-AA1A-37CD-3CA1-8975D56E0917</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

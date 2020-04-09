@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD4B8ADE-C9E1-5391-42B3-FC427058EDBC" name="HOME INSURANCE">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:55:23 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>5F2DE80E-426F-043D-6675-679A1AA54A24</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<discriminatorValue>H</discriminatorValue>
+<completeSubtypes>true</completeSubtypes>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="H_STARTDATE" id="CEEEAD96-AF9B-0085-F60F-9DED5C1EE472">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:55:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurance's start date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="H_ENDDATE" id="A703D3B0-A6C6-94CF-5C54-3D186C8570E0">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:56:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurance's end date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="H_PREMIUM" id="11C09BC8-053B-874B-0EFD-B2B99BAF4AFB">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-04 23:57:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurance's premium amount]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="H_STATUS" id="00B7DA2F-41BE-775E-2002-93462CF3CA8C">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:00:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home policy insurance status. "C" for current and "P" for expired.]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

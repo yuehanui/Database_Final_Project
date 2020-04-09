@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7C077E16-EECA-6463-330B-EB703569470A" name="HOME">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:14:51 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="HOME_ID" id="19503EA7-0808-588B-67F1-FD16AF2C62C3">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:15:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home's ID]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PUR_DATE" id="FE6E2A7A-60AD-D5BE-1617-88937D394A0C">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:15:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home's purchase date]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PUR_VALUE" id="B228A0AE-3EF5-1141-3E75-260C6342E5AA">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:17:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home's purchase value]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HOMEAREA" id="C2679F31-97AB-D3B4-7219-67BDE8D6B4DC">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:18:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home area in sq.ft.]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HOMETYPE" id="A2609785-A578-825F-12A4-882337CAFB67">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:23:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Type of home. S,M,C,T representing Single family, Multi Family, Condominium, Town house respectively]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUTO_FIRE" id="427FE4C1-7277-86EE-D11C-F7396D861E38">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:21:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicate whether there is a Auto fire notification]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEC_SYS" id="52A7BD19-F8D2-0C1E-C830-69B8746FDB8D">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:24:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicate whether there is a home security system]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SWIM_POOL" id="D2DE5BEB-F916-9FAD-E1B3-6644EFE36823">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:25:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Swimming pool. "U", "O", "I", "M", null representing underground swimming pool, overground swimming pool, indoor swimming pool, multiple swimming pool and no swimming pool respectively]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BASEMENT" id="91D5F161-0CC1-16AD-4721-4035FAA1BC90">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:25:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicate whether there is a basement]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT033</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="C_ID" id="BF638CC8-95EF-F9AB-3A1A-B8EE4DED93D9">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 18:27:28 UTC</createdTime>
+<generatorID>0AF8501A-2F82-C423-BF64-61E8895C7BA6</generatorID>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<referedAttribute>581710F2-568A-4972-0C50-D9BF2BBF2F44</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9652CD24-295E-98C6-EBF2-B59DF5809463" name="HOME PK">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 00:15:24 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>19503EA7-0808-588B-67F1-FD16AF2C62C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

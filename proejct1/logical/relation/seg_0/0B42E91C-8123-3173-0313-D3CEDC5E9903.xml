@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_VEHICLE_DRIVER" directorySegmentName="seg_0" id="0B42E91C-8123-3173-0313-D3CEDC5E9903">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 19:17:19 UTC</createdTime>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<sourcePk>9B256230-A752-01A7-5912-4C40F442E7F8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4B62D44D-6D58-9588-0AB5-C8F9F4EBD01E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA0C3F03-8D1A-6A64-2FD5-589255E47178</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
