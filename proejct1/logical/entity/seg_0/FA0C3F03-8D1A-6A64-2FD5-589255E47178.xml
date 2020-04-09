@@ -15,10 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="LICENSE_NO" id="6A2DDA73-6911-A024-F326-7A4BEE1DC0AA">
-<createdBy>71918</createdBy>
-<createdTime>2020-04-05 19:14:21 UTC</createdTime>
-<commentInRDBMS><![CDATA[Driver license number]]></commentInRDBMS>
+<Attribute name="DRIVER_ID" id="D847F334-770F-A705-CA85-3F16573F66B2">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-04-09 02:02:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver's unique identifier]]></commentInRDBMS>
 <ownerDesignName>proejct1</ownerDesignName>
 <engineerTo>
 <item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
@@ -26,8 +26,22 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>15</dataTypePrecision>
-<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LICENSE_NO" id="6A2DDA73-6911-A024-F326-7A4BEE1DC0AA">
+<createdBy>71918</createdBy>
+<createdTime>2020-04-05 19:14:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Driver's license number]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DRIVER_FNAME" id="40636E29-2F7E-0EF5-402D-DC417AA3EAE8">
 <createdBy>71918</createdBy>
@@ -70,21 +84,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="VIN" id="6841B1BA-7F3A-D062-2A2B-2F258C0DA70A">
-<createdBy>71918</createdBy>
-<createdTime>2020-04-05 19:17:19 UTC</createdTime>
-<generatorID>0B42E91C-8123-3173-0313-D3CEDC5E9903</generatorID>
-<ownerDesignName>proejct1</ownerDesignName>
-<engineerTo>
-<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
-</engineerTo>
-<referedAttribute>F5C88741-1116-E843-AFBA-A2A8FCD5B632</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="260506CA-CF31-DC8D-C73F-D461FA64802D" name="DRIVER PK">
@@ -96,7 +95,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>6A2DDA73-6911-A024-F326-7A4BEE1DC0AA</attributeRef>
+<attributeRef>D847F334-770F-A705-CA85-3F16573F66B2</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

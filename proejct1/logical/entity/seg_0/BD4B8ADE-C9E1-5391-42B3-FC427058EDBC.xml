@@ -15,8 +15,6 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<discriminatorValue>H</discriminatorValue>
-<completeSubtypes>true</completeSubtypes>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="H_STARTDATE" id="CEEEAD96-AF9B-0085-F60F-9DED5C1EE472">
 <createdBy>71918</createdBy>

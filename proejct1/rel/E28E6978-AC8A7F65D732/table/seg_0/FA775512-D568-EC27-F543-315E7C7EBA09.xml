@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF0E2835-8328-5B15-8DCA-2C4BDA040E71" name="A_PAYMENT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA775512-D568-EC27-F543-315E7C7EBA09" name="A_PAYMENT">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <generatorID>CC9521F9-2C33-D1AD-D250-9D48924D8C88</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="A_PAYMENTNO" id="41411F48-ABF3-E396-CDE3-C03469D40195">
+<Column name="A_PAYMENTNO" id="C3E431CC-09B7-F768-14C5-A3BB587B7460">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's payment number]]></commentInRDBMS>
 <generatorID>DF1F650B-49CB-7D2C-9681-37BD9CEE3B8C</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PAYDATE" id="3800416B-DEED-A4C0-D7AF-B9217707C8AC">
+<Column name="A_PAYDATE" id="90F7B73E-14D4-08BF-B9B7-33A5985A0785">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's payment date]]></commentInRDBMS>
 <generatorID>17D5B6BA-76DD-1B8F-ACE3-E2B932F6ECDE</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -33,9 +33,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PAYMETHOD" id="F34C0510-4012-66CC-0314-C1CDF3344172">
+<Column name="A_PAYMETHOD" id="B150D96B-81DD-F957-2513-BCBB4761A8E6">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's method of payment. The pamyment method shoud be one of the following:“PayPal”, “Credit”, “Debit”, “Check”.]]></commentInRDBMS>
 <generatorID>72F63AC5-4399-AE42-95B3-3BFEC2263894</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -46,9 +46,9 @@
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PAY_AMOUNT" id="D9ADCABD-DB40-A64B-EF78-BD05FCCDEBFA">
+<Column name="A_PAY_AMOUNT" id="2A47E16B-BCAD-7216-FABC-A07DBB92885F">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's payment amount]]></commentInRDBMS>
 <generatorID>47278FE9-05B2-DCB3-9F54-D8362E2DE09A</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -59,9 +59,9 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_INVOICE_A_INV_ID" id="4F1435C9-A014-D708-6BE7-EF3571EA8C72">
+<Column name="A_INV_ID" id="5A871FF0-B4B3-5535-6445-FD3619A92CF6">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <generatorID>6A4FA27C-BC5B-21F6-5C8A-EACF6E722822</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -72,32 +72,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="97908F7A-28E7-3E11-9EA6-5457C52DB400" referredColumn="C151D333-7386-593F-4C96-2B2CF4003FEB"/>
+<colAssociation fkAssociation="DF57DEC6-E5E7-6BBA-077E-55A562EA8803" referredColumn="774244B4-21D3-28C9-9347-53CB56B1D286"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B8CD0DF6-6E0B-ABFA-C7C9-FBD69F1B26B7" name="A_PAYMENT_PK">
+<ind_PK_UK id="9F26A6FC-7CF2-82A8-AC68-4B755270FA73" name="A_PAYMENT_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <generatorID>A40150D3-01D3-8400-6E0D-95DF50C3D258</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="41411F48-ABF3-E396-CDE3-C03469D40195"/>
+<colUsage columnID="C3E431CC-09B7-F768-14C5-A3BB587B7460"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="194C4C4A-76EB-810A-9F5F-57D16BE37F6A" name="A_PAYMENT_A_INVOICE_FK">
+<ind_PK_UK id="B3E92EF3-A15B-7168-978C-E1A569FF693B" name="A_PAYMENT_A_INVOICE_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-06 19:40:27 UTC</createdTime>
+<createdTime>2020-04-09 02:05:52 UTC</createdTime>
 <generatorID>91A3D7F8-4D79-D9C4-F113-3F20D75FC9C3</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="4F1435C9-A014-D708-6BE7-EF3571EA8C72"/>
+<colUsage columnID="5A871FF0-B4B3-5535-6445-FD3619A92CF6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
