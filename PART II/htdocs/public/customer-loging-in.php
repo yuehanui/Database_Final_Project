@@ -1,11 +1,9 @@
-<!-- This file process user input and create account for registers -->
+<!-- This file check credential for client account -->
 
 <?php require_once('../private/initialize.php') ?>
 
-<?php 
-	if(check_cookie()){
-		redirect_to("index.php");
-}?>
+<!-- If user has already logged in, redirect to index.php-->
+<?php if(check_cookie()){redirect_to("index.php");}?>
 
 <!-- Define Title -->
 <?php $page_title = 'Loging in'; ?>
@@ -27,17 +25,16 @@
 			$pswdhash = mysqli_fetch_row($pswd_result)[0];
 			if (password_verify($pswd, $pswdhash)){
 				echo ("Loging in...");
-				set_cookies($username, $pswdhash);
-				redirect_to("index.php");
-
-
+				set_cookies($username, $pswdhash, "C");
+				header( "Refresh:1; url=index.php", true, 303);
 			} else {
 				echo("Username not found or password doesn't match");
-				header( "Refresh:2; url=customerlogin.php", true, 303);
+				redirect_in_time("customerlogin.php", 2);
+			
 			}
 		} else {
 			echo("Username not found or password doesn't match");
-			header( "Refresh:2; url=customerlogin.php", true, 303);
+			redirect_in_time("customerlogin.php", 2);
 		}
 	} else {
 	// not allowing direct access via url

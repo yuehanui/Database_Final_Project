@@ -1,7 +1,8 @@
+<!-- This file is the register page for client-->
 
 <?php require_once('../private/initialize.php') ?>
 
-
+<!-- If user has already logged in, redirect to index.php-->
 <?php if(check_cookie()){redirect_to("index.php");}?>
 
 <!-- Define Title -->

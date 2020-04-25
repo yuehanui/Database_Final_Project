@@ -15,15 +15,42 @@
 
 ## Part II
 
-### Apr 23
+#### file directory
+private
 
-####Private
 - initialize.php
 - function.php
+- shared
+    - header.php    `contains the common header for all pages`
+    - footer.php
+    ` contains the common footer for all pages`
+    - nav_guest.php        
+    `the navigation bar for guest`
+    - nav_user.php
+    `the navigation bar for logged in user`
+    - staff-dashboard.php (空着)
+    `support file for public/dashboard.php`
+    - customer.dashboard.php  (空着)
+    `support file for public/dashboard.php`
+    
+public 
 
-###Public 
-- index.php                    
-- login.php	
-- register.php
+- index.php 
+- dashboard.php
+	`page for staff to select and manimulate data,for customer to view his/her own data`                   
+- customerlogin.php      
+  `login page for client account`	
+- customer-loging-in.php 
+`check credential for client account`
+- stafflogin.php   
+  `login page for staff account`
+- staff-loging-in.php
+`check credential for staff account`
+- register.php.   
+`register page for client`
 - create-account.php
+`process user input and create account for registers`
+- logout.php.   
+`log user out by unset cookies`
+   
    

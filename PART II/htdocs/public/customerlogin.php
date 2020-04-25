@@ -1,11 +1,9 @@
+<!-- This file is the login page for client account -->
 
 <?php require_once('../private/initialize.php') ?>
 
-
-<?php 
-	if(check_cookie()){
-		redirect_to("index.php");
-}?>
+<!-- If user has already logged in, redirect to index.php-->
+<?php if(check_cookie()){redirect_to("index.php");}?>
 
 <!-- Define Title -->
 <?php $page_title = 'Customer Login'; ?>

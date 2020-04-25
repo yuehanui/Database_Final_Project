@@ -1,5 +1,3 @@
-
-
 <?php require_once('../private/initialize.php') ?>
 
 <!-- Define Title -->
@@ -7,7 +5,6 @@
 
 <!-- Common header for all pages -->
 <?php include(SHARED_PATH . '/header.php') ?>
-
 
 	
 <!-- Common footer for all pages -->
