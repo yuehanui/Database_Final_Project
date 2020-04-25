@@ -1,6 +1,9 @@
 
 <?php require_once('../private/initialize.php') ?>
 
+
+<?php if(check_cookie()){redirect_to("index.php");}?>
+
 <!-- Define Title -->
 <?php $page_title = 'Register'; ?>
 
@@ -8,42 +11,47 @@
 <?php include(SHARED_PATH . '/header.php') ?>
 
 
-<div class="row">
-      <div class="col-sm-4" ></div>
-      <div class="col-sm-4" >
 
-      	<h1 class="text-center">Register</h1>
+      	
 
+      	<?php  if (isset($_GET['usernametaken'])){
+      		echo ('<div class="text-danger">Username is taken</div>');
+      	} ?>
       	<form action="create-account.php" method="POST" class="needs-validation" novalidate>
+		    <!-- Username -->
 		    <div class="form-group">
 		      <label for="username">Username:</label>
-		      <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required>
-      		  <div class="invalid-feedback">Length should be between 6 to 20 </div>
-		    </div>
+		      <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required pattern="[a-zA-Z0-9]{5,20}">
+      		  <div class="invalid-feedback">
+      		  	Contains only letters and numbers<br>
+      			Length should be between 5 to 20 </div>
+		      </div>
+		    <!-- Password -->
 		    <div class="form-group">
-		      <label for="pwd">password:</label>
+		      <label for="pwd">Password:</label>
 		      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$">
 		      <div class="invalid-feedback">
-			  Contains both letters and digits<br>
+			  Contains both letters and numbers<br>
 			  Length between 6 to 20
-			</div>
+			  </div>
 		      
 		    </div>
-		    
+		    <!-- First Name -->
 		    <div class="form-group">
 		      <label for="fname">First Name:</label>
-		      <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required pattern="[a-zA-Z]{1-30}">
-		      <div class="invalid-feedback">Can only contain letters</div>
+		      <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required pattern="[a-zA-Z]{1,30}">
+		      <div class="invalid-feedback">Contains only letters<br>At most 30 characters</div>
 		    </div>
+		    <!-- Last Name -->
 		    <div class="form-group">
 		    	<label for="lname">Last Name:</label>
-		      <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required pattern="[a-zA-Z]{1-30}">
-		      <div class="invalid-feedback">Can only contain letters</div>
+		      <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required pattern="[a-zA-Z]{1,30}">
+		      <div class="invalid-feedback">Contains only letters<br>At most 30 characters</div>
 		    </div>
 
 		    <!-- Gender -->
 		    <div>Gender:</div>
-		    <div class="form-group">
+		    <div class="form-group text-center">
 			    <div class="form-check-inline">
 			      <label class="form-check-label" for="Male">
 			        <input type="radio" class="form-check-input" id="Male" name="gender" value="M" checked>Male
@@ -63,7 +71,7 @@
 
 		     <!-- Martial status -->
 		   <div>Martial Status:</div>
-		    <div class="form-group">
+		    <div class="form-group text-center">
 
 			    <div class="form-check-inline">
 			      <label class="form-check-label" for="Married">
@@ -87,7 +95,8 @@
 		    <div class="form-group">
 		    	<label for="street_ad">Street Address:</label>
 		      <input type="text" class="form-control" id="street_ad" placeholder="Enter Street Address" name="street_ad" required maxlength="30">
-		      <div class="invalid-feedback">Enter street address</div>
+		      <div class="invalid-feedback">
+		      	At most 30 characters<br></div>
 		    </div>
 
 		    <!-- city -->
@@ -95,7 +104,8 @@
 		    	<label for="city">City:</label>
 		      <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required pattern="[a-zA-Z]{1,30}">
 		      <div class="invalid-feedback">
-		      	Enter City that only contains letters and at most 30 characters<br>
+		      	Contains only letters<br>
+		      	At most 30 characters<br>
 		        
 		      	</div>
 		    </div>
@@ -132,26 +142,26 @@
 					<option value = "MT">Montana - MT</option>
 					<option value = "NE">Nebraska - NE</option>
 					<option value = "NV">Nevada - NV</option>
-					<option value = "HampshireNH">New Hampshire - NH</option>
-					<option value = "JerseyNJ">New Jersey - NJ</option>
-					<option value = "MexicoNM">New Mexico - NM</option>
-					<option value = "YorkNY">New York - NY</option>
-					<option value = "CarolinaNC">North Carolina - NC</option>
-					<option value = "DakotaND">North Dakota - ND</option>
+					<option value = "NH">New Hampshire - NH</option>
+					<option value = "NJ">New Jersey - NJ</option>
+					<option value = "NM">New Mexico - NM</option>
+					<option value = "NY">New York - NY</option>
+					<option value = "NC">North Carolina - NC</option>
+					<option value = "ND">North Dakota - ND</option>
 					<option value = "OH">Ohio - OH</option>
 					<option value = "OK">Oklahoma - OK</option>
 					<option value = "OR">Oregon - OR</option>
 					<option value = "PA">Pennsylvania - PA</option>
-					<option value = "IslandRI">Rhode Island - RI</option>
-					<option value = "CarolinaSC">South Carolina - SC</option>
-					<option value = "DakotaSD">South Dakota - SD</option>
+					<option value = "RI">Rhode Island - RI</option>
+					<option value = "SC">South Carolina - SC</option>
+					<option value = "SD">South Dakota - SD</option>
 					<option value = "TN">Tennessee - TN</option>
 					<option value = "TX">Texas - TX</option>
 					<option value = "UT">Utah - UT</option>
 					<option value = "VT">Vermont - VT</option>
 					<option value = "VA">Virginia - VA</option>
 					<option value = "WA">Washington - WA</option>
-					<option value = "VirginiaWV">West Virginia - WV</option>
+					<option value = "WV">West Virginia - WV</option>
 					<option value = "WI">Wisconsin - WI</option>
 					<option value = "WY">Wyoming - WY</option>
 		      </select>
@@ -161,17 +171,12 @@
 		    <div class="form-group">
 		    	<label for="zipcode">Zip Code:</label>
 		      <input type="text" class="form-control" id="zipcode" placeholder="Enter Zip Code" name="zipcode" required pattern="[0-9]{5}">
-		      <div class="invalid-feedback">Enter a five-digit zip code</div>
+		      <div class="invalid-feedback">5-digit</div>
 		    </div>
-
-		    <button type="submit" class="btn btn-primary">Submit</button>
+		    <div class="text-center">
+		    	<button type="submit" class="btn btn-primary">Submit</button>
+		    </div>
 		</form>
-
-
-      </div>
-      <div class="col-sm-4" ></div>
-</div>
-
 
 
 

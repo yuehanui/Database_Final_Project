@@ -1,4 +1,8 @@
 <!-- This file contains the common header for all pages-->
 
- </body>
+ 			</div>
+    		<div class="col-sm-4" ></div>
+		</div>
+
+ 	</body>
  </html>

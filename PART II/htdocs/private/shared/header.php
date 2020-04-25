@@ -22,8 +22,21 @@
  	<meta charset="utf-8">
  </head>
  <body>
-	<?php include_once('nav_guest.php')?>
+	<?php 
+
+      if (check_cookie()){
+        include_once('nav_user.php');
+      } else {
+        include_once('nav_guest.php');
+      }
+?>
+      
 
 	<div class="container-fluid bg-dark text-center">
-	  <h1><a class="nav-link text-white" href="index.php">WDS</a></h1>
+	  <h1><a class="nav-link text-white" href="index.php"><?php echo $page_title; ?></a></h1>
 	</div>
+
+	<div class="row" >
+      <div class="col-sm-4" ></div>
+      <div class="col-sm-4 " >
+      	<br>

@@ -38,11 +38,13 @@ ALTER TABLE auto_insurance ADD CONSTRAINT auto_insurance_pk PRIMARY KEY ( c_id )
 
 CREATE TABLE customer (
     c_id         INT NOT NULL COMMENT 'Customer''s ID',
+    username     VARCHAR(20) NOT NULL COMMENT 'The username in database associate with the customer',
+    password     VARCHAR(60) NOT NULL COMMENT 'The hashed password', 
     c_fname      VARCHAR(30) NOT NULL COMMENT 'Customer''s first name',
     c_lname      VARCHAR(30) NOT NULL COMMENT 'Customer''s last name',
     gender       VARCHAR(1) COMMENT 'Customer''s gender. “M”, or “F” representing “Male” or “Female” respectively.',
     martial_sta  VARCHAR(1) NOT NULL COMMENT 'Customer''s martial status. “M”, “S”, or “W”, representing “Married”, “Single”, and “Widow/Widower” respectively. ',
-    c_type       VARCHAR(14) NOT NULL COMMENT 'Customer type',
+    c_type       VARCHAR(2)  COMMENT 'Customer type',
     c_street_ad  VARCHAR(30) NOT NULL COMMENT 'Customer''s street  address',
     c_city       VARCHAR(30) NOT NULL COMMENT 'The city of the customer''s address',
     c_state      VARCHAR(2) NOT NULL COMMENT 'The state abbr of the customer''s address',
