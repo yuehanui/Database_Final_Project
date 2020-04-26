@@ -10,7 +10,8 @@
 
 <!-- Common header for all pages -->
 <?php include(SHARED_PATH . '/header.php') ?>
-<div class="text-center">
+
+ <div class="text-center">
 
 <?php
 	//request must be POST, preventing direct access via url

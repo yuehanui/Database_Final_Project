@@ -10,9 +10,9 @@
 
 <!-- Common header for all pages -->
 <?php include(SHARED_PATH . '/header.php') ?>
-
-
-
+<div class="row" >
+      <div class="col-sm-4" ></div>
+      <div class="col-sm-4 " >
       	
 
       	<?php  if (isset($_GET['usernametaken'])){
@@ -179,7 +179,10 @@
 		    </div>
 		</form>
 
+		<form action="http://foo.com"><input name="say" id="say" value="Hi"><button>Send my greetings</button></form>
 
+</div><div class="col-sm-4 " >
+ </div>
 
 <!-- Common footer for all pages -->
 <?php include(SHARED_PATH . '/footer.php') ?>

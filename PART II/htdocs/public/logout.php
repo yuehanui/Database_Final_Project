@@ -10,7 +10,7 @@
 <div class="text-center">
 <?php 
 	if(check_cookie()){
-		unset_cookies();
+		unset_cookies_n_session();
 		echo ("Loging out...");
 		redirect_in_time("index.php",1);;
 	} else {

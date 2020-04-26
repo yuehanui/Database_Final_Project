@@ -15,6 +15,10 @@
 
 ## Part II
 
+
+####Apr 26
+完成客户的个人信息显示和保险计划显示
+
 #### file directory
 private
 
@@ -30,7 +34,7 @@ private
     `the navigation bar for logged in user`
     - staff-dashboard.php (空着)
     `support file for public/dashboard.php`
-    - customer.dashboard.php  (空着)
+    - customer.dashboard.php
     `support file for public/dashboard.php`
     
 public 
@@ -52,5 +56,7 @@ public
 `process user input and create account for registers`
 - logout.php.   
 `log user out by unset cookies`
+- Subscription.  
+`show customer's insurance plans`
    
    

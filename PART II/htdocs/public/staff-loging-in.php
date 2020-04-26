@@ -10,6 +10,7 @@
 
 <!-- Common header for all pages -->
 <?php include(SHARED_PATH . '/header.php') ?>
+
 <div class="text-center">
 
 <?php
@@ -35,8 +36,8 @@
 	}
 
 ?>
-
 </div>
+
 
 <!-- Common footer for all pages -->
 <?php include(SHARED_PATH . '/footer.php') ?>

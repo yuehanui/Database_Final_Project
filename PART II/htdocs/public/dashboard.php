@@ -1,7 +1,8 @@
 <?php require_once('../private/initialize.php') ?>
 
 <!-- If user hasn't logged in, redirect to index.php-->
-<?php if(!check_cookie()){redirect_to("index.php");}?>
+<?php if(!check_cookie()){
+	redirect_to("index.php");}?>
 
 <!-- Define Title -->
 <?php $page_title = 'Dashboard'; ?>

@@ -52,14 +52,10 @@
 	 			$C_ID = $largest_c_id + 1; 
 	 		}
 
-		 		// Two version of insert statements depend on if gender is provided. 
-		 	if ($gender == "N"){
-		 		$insert_customer_info = "INSERT INTO customer (C_ID, USERNAME, PASSWORD, C_FNAME, C_LNAME, MARTIAL_STA, C_STREET_AD, C_CITY, C_STATE, C_ZIPCODE) 
-VALUES ($C_ID, '$username', '$pswdhash', '$fname', '$lname', '$martial', '$street_ad', '$city', '$state', '$zipcode')";
-		 	} else {
-		 		$insert_customer_info = "INSERT INTO customer (C_ID, USERNAME, PASSWORD, C_FNAME, C_LNAME, GENDER, MARTIAL_STA , C_STREET_AD, C_CITY, C_STATE, C_ZIPCODE) 
+		 		
+	 		$insert_customer_info = "INSERT INTO customer (C_ID, USERNAME, PASSWORD, C_FNAME, C_LNAME, GENDER, MARTIAL_STA , C_STREET_AD, C_CITY, C_STATE, C_ZIPCODE) 
 VALUES ($C_ID, '$username', '$pswdhash', '$fname', '$lname', '$gender', '$martial', '$street_ad', '$city', '$state', '$zipcode')";
-				}
+				
 				// Polulate the user input
 				$insert_result = mysqli_query($connection, $insert_customer_info);
 				

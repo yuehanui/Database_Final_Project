@@ -10,7 +10,10 @@
 
 <!-- Common header for all pages -->
 <?php include(SHARED_PATH . '/header.php') ?>
-	
+<div class="row" >
+      <div class="col-sm-4" ></div>
+      <div class="col-sm-4 " >
+      	<br>
 
       	
       	<form action="customer-loging-in.php" method="POST">
@@ -29,7 +32,7 @@
 		</form>
 
 
-
+</div><div class="col-sm-4 " ></div>
 <!-- Common footer for all pages -->
 <?php include(SHARED_PATH . '/footer.php') ?>
 
