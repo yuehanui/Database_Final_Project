@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="304617AA-4469-6C5E-DEF5-918726D5F26D" name="CUSTOMER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22ADA15F-D503-7566-BDEB-541A83A6F04D" name="CUSTOMER">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>5F2DE80E-426F-043D-6675-679A1AA54A24</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="C_ID" id="80F7FF44-D28F-7424-C7E0-41321E62ABC3">
+<Column name="C_ID" id="C02AE8E7-1A6A-7635-967E-130AB8114A69">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's ID]]></commentInRDBMS>
 <generatorID>581710F2-568A-4972-0C50-D9BF2BBF2F44</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_FNAME" id="859182F8-2A40-4CCF-5935-7D94818D20B3">
+<Column name="C_FNAME" id="C146D813-6F8A-6F83-E47E-050103AB5989">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's first name]]></commentInRDBMS>
 <generatorID>FFE775E0-C626-A434-4957-CFCCD2AB60DB</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -34,9 +34,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_LNAME" id="F95FEDFC-C9D5-094E-ACCD-D2DF014022E4">
+<Column name="C_LNAME" id="A534B94F-2613-12FE-C17E-9B4FEC813994">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's last name]]></commentInRDBMS>
 <generatorID>0823ABBE-5F44-C598-FF32-6B4581D8FDDF</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -47,9 +47,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GENDER" id="B6D38A15-2898-2C81-448C-C584D297AFD5">
+<Column name="GENDER" id="37DFBD5E-4DF0-4468-4C46-B3654E56FC88">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's gender. “M”, or “F” representing “Male” or “Female” respectively.]]></commentInRDBMS>
 <generatorID>CC70D5C1-D6DA-78ED-1A46-42C54F83417C</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -61,9 +61,9 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MARTIAL_STA" id="9B57E38C-D67C-687A-9BBF-A6D6FE2D07BB">
+<Column name="MARTIAL_STA" id="14236010-DBB3-5761-9A4B-B62ABC8EDB2B">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's martial status. “M”, “S”, or “W”, representing “Married”, “Single”, and “Widow/Widower” respectively. ]]></commentInRDBMS>
 <generatorID>31979B85-5BA0-A509-10ED-6C00DFC71344</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -74,9 +74,9 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_TYPE" id="000CEED7-9435-3468-6E6D-0147ADF0C4B9">
+<Column name="C_TYPE" id="05B3CF83-85BC-FC49-7431-76A4FDED8909">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer type]]></commentInRDBMS>
 <generatorID>141D3FB5-8DFC-8B26-5267-873B9558E9AB</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -93,9 +93,9 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <isDiscriminatorColumn>true</isDiscriminatorColumn>
 </Column>
-<Column name="C_STREET_AD" id="6E1C62B6-C564-3739-B3BC-B6FD1497E7D5">
+<Column name="C_STREET_AD" id="3E65A2D1-00E3-183D-4B61-832045602610">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's street  address]]></commentInRDBMS>
 <generatorID>D8276E8F-024D-BF35-30FA-EAE93EE19C95</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -106,9 +106,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_CITY" id="1E4C60F9-BA1F-69AD-B993-6D232EAF5BB7">
+<Column name="C_CITY" id="A8BE8C1E-BFD1-1E95-EB58-CF91FA676B82">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[The city of the customer's address]]></commentInRDBMS>
 <generatorID>AEC36F3B-C29C-9401-970B-F29139445D41</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -119,9 +119,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_STATE" id="609CD955-DDCF-0B97-E636-AE23A59758EA">
+<Column name="C_STATE" id="DC2CA6CF-37F8-FDE4-3C58-251E86DA7FF7">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[The state abbr of the customer's address]]></commentInRDBMS>
 <generatorID>77727595-B35C-0506-752F-705633174644</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -132,9 +132,9 @@
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="C_ZIPCODE" id="1B773A9F-13E0-0116-28FD-C9D2F9284A2F">
+<Column name="C_ZIPCODE" id="3B7DC531-1160-EA7C-3EB0-3E6F84DDA73C">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[ The 5-digit zip code of the customer's address]]></commentInRDBMS>
 <generatorID>7B426A60-18B0-8B73-B2D7-B7BE7CAE5473</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -147,16 +147,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6DC04E6B-E078-C347-E828-153E87216E2B" name="CUSTOMER_PK">
+<ind_PK_UK id="32916C5E-6220-0521-0B28-8714C2A34549" name="CUSTOMER_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>9193DD57-DBE1-CACB-5A5A-8AB7654F0203</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="80F7FF44-D28F-7424-C7E0-41321E62ABC3"/>
+<colUsage columnID="C02AE8E7-1A6A-7635-967E-130AB8114A69"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

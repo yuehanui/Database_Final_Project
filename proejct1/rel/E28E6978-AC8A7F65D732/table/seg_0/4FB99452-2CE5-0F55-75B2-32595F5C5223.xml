@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9FE52B1-81F8-8602-6B67-A519B049A318" name="HOME_INSURANCE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FB99452-2CE5-0F55-75B2-32595F5C5223" name="HOME_INSURANCE">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>BD4B8ADE-C9E1-5391-42B3-FC427058EDBC</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="C_ID" id="CFA3851B-8596-E98D-9503-03B4433C679B">
+<Column name="C_ID" id="2F2BFF70-FF8F-E3A4-93C6-B0B19D008901">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's ID]]></commentInRDBMS>
 <generatorID>581710F2-568A-4972-0C50-D9BF2BBF2F44</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -21,12 +21,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="FEB970CD-AA2E-ED62-BBC7-808BA87994A7" referredColumn="80F7FF44-D28F-7424-C7E0-41321E62ABC3"/>
+<colAssociation fkAssociation="682921FC-5F3B-FE17-4BEB-A9558C2FB7C9" referredColumn="C02AE8E7-1A6A-7635-967E-130AB8114A69"/>
 </associations>
 </Column>
-<Column name="H_START_DATE" id="B4A3BF94-630D-22B2-44AB-30DE483BDD03">
+<Column name="H_START_DATE" id="8FA8EFF6-E266-A491-4F24-8E88136685EB">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home insurance's start date]]></commentInRDBMS>
 <generatorID>CEEEAD96-AF9B-0085-F60F-9DED5C1EE472</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -36,9 +36,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="H_END_DATE" id="57E24D00-70E2-4D88-C7DB-D86F3FE0AA52">
+<Column name="H_END_DATE" id="6A3EC2F1-3966-213E-A2D5-DE372F92E161">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home insurance's end date]]></commentInRDBMS>
 <generatorID>A703D3B0-A6C6-94CF-5C54-3D186C8570E0</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -48,9 +48,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="H_PREMIUM" id="BAF2A860-F620-6416-3325-AA649E373229">
+<Column name="H_PREMIUM" id="8A9DAC3C-45C0-F975-3C9F-AF2205154FCE">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home insurance's premium amount]]></commentInRDBMS>
 <generatorID>11C09BC8-053B-874B-0EFD-B2B99BAF4AFB</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -62,9 +62,9 @@
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="H_STATUS" id="FD88BC1E-EECE-8D64-C58E-2F5F3B805EAC">
+<Column name="H_STATUS" id="41B50394-796B-8B7E-BF7F-C88AE7F8BB6E">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Home policy insurance status. "C" for current and "P" for expired.]]></commentInRDBMS>
 <generatorID>00B7DA2F-41BE-775E-2002-93462CF3CA8C</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -77,27 +77,27 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B7EAABAA-7EA9-9E56-A7D6-629ABCC2D477" name="HOME_INSURANCE_PK">
+<ind_PK_UK id="04848F34-E24F-FA64-9F4A-0C53F8E0B465" name="HOME_INSURANCE_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>9193DD57-DBE1-CACB-5A5A-8AB7654F0203</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CFA3851B-8596-E98D-9503-03B4433C679B"/>
+<colUsage columnID="2F2BFF70-FF8F-E3A4-93C6-B0B19D008901"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E0D5054F-D2ED-7295-F1A9-46F451B67664" name="HOME_INSURANCE_CUSTOMER_FK">
+<ind_PK_UK id="F6513C44-1972-B549-7DF9-BDF642F05D13" name="HOME_INSURANCE_CUSTOMER_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>31658F65-98DA-F20D-7878-F62D82DF7E58</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="CFA3851B-8596-E98D-9503-03B4433C679B"/>
+<colUsage columnID="2F2BFF70-FF8F-E3A4-93C6-B0B19D008901"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

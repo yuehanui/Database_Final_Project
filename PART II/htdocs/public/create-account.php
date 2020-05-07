@@ -40,21 +40,14 @@
 		 	// Hash the password
 		 	$pswdhash = password_hash($pswd, PASSWORD_DEFAULT);
 		 	// Find out a available C_ID to use 
-		 	$largest_c_id_query = "SELECT max(C_ID) FROM customer";
-		 	$c_id_result = mysqli_query($connection, $largest_c_id_query);
-		 	$largest_c_id = mysqli_fetch_row($c_id_result)[0];
-		 	mysqli_free_result($c_id_result);
+		 	$c_id = find_next_PK("c_id", "customer", $connection) or $c_id=10000;
 
 	 		// If customer table is empty, set C_ID = 10000, else set C_ID = the_largest_C_ID + 1
-	 		if($largest_c_id== NULL){
-	 			$C_ID = 10000;
-	 		} else {
-	 			$C_ID = $largest_c_id + 1; 
-	 		}
+	 		
 
 		 		
 	 		$insert_customer_info = "INSERT INTO customer (C_ID, USERNAME, PASSWORD, C_FNAME, C_LNAME, GENDER, MARTIAL_STA , C_STREET_AD, C_CITY, C_STATE, C_ZIPCODE) 
-VALUES ($C_ID, '$username', '$pswdhash', '$fname', '$lname', '$gender', '$martial', '$street_ad', '$city', '$state', '$zipcode')";
+VALUES ($c_id, '$username', '$pswdhash', '$fname', '$lname', '$gender', '$martial', '$street_ad', '$city', '$state', '$zipcode')";
 				
 				// Polulate the user input
 				$insert_result = mysqli_query($connection, $insert_customer_info);

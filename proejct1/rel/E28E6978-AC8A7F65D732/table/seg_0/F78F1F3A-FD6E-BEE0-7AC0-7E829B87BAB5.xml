@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31428D71-6447-21D4-20CE-7CD433A120DD" name="AUTO_INSURANCE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F78F1F3A-FD6E-BEE0-7AC0-7E829B87BAB5" name="AUTO_INSURANCE">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>68A3A539-BF7F-4AEC-934D-49DCC4C1BC71</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="C_ID" id="3A77D7E5-83BF-8BC6-8260-DDB4AC96FFD4">
+<Column name="C_ID" id="BAC49B74-F9B9-3F72-C9A0-2E9A6E81CB3A">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Customer's ID]]></commentInRDBMS>
 <generatorID>581710F2-568A-4972-0C50-D9BF2BBF2F44</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -21,12 +21,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C2D660F2-81AD-2B39-C866-C344B45B2AC8" referredColumn="80F7FF44-D28F-7424-C7E0-41321E62ABC3"/>
+<colAssociation fkAssociation="A21E04C4-A7FB-3551-650C-3EF351EDE891" referredColumn="C02AE8E7-1A6A-7635-967E-130AB8114A69"/>
 </associations>
 </Column>
-<Column name="A_START_DATE" id="ED695171-7C88-530A-2954-FC54186F8DA0">
+<Column name="A_START_DATE" id="AC32D18B-7D2E-91C1-6764-03CC2290A145">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's start date]]></commentInRDBMS>
 <generatorID>0466E107-2332-C1A1-B746-BCD283B38B38</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -36,9 +36,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_END_DATE" id="57F04EF3-D858-1B57-E2B1-6983ACEA34C5">
+<Column name="A_END_DATE" id="B0471B66-1D5E-80EC-5192-880F4121A532">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's end date]]></commentInRDBMS>
 <generatorID>D09BA886-2AF4-35FB-B652-9243B5494828</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -48,9 +48,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PREMIUM" id="FB1AB229-46D9-D51C-991E-70E68B5D8233">
+<Column name="A_PREMIUM" id="AC4323D0-03A5-28B1-C0BA-F9FBA05B6E60">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto insurance's premium amount]]></commentInRDBMS>
 <generatorID>73B97F27-D73E-642F-B85F-77D0252B0079</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -62,9 +62,9 @@
 <ownDataTypeParameters>,10,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_STATUS" id="E9CAA510-8391-B1A0-97AC-0E9610472DDB">
+<Column name="A_STATUS" id="5A9C7A1B-E4E8-1BF9-DC7D-27EE0C94E5F4">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Auto policy insurance status. "C" for current and "P" for expired.]]></commentInRDBMS>
 <generatorID>A4BC0335-EE67-2D29-6AF8-4F9DCCB3A6BC</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -77,27 +77,27 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="59DEA943-7C7C-3152-EB8B-91DEDF8C57B2" name="AUTO_INSURANCE_PK">
+<ind_PK_UK id="3519BF2E-D342-F464-F1EC-DFA1010ADB5E" name="AUTO_INSURANCE_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>9193DD57-DBE1-CACB-5A5A-8AB7654F0203</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3A77D7E5-83BF-8BC6-8260-DDB4AC96FFD4"/>
+<colUsage columnID="BAC49B74-F9B9-3F72-C9A0-2E9A6E81CB3A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="45115EDA-5173-DC07-2D13-E5D1FAFDA216" name="AUTO_INSURANCE_CUSTOMER_FK">
+<ind_PK_UK id="70C5C057-2EC5-EB4D-9213-0619198DFE51" name="AUTO_INSURANCE_CUSTOMER_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>607FFA93-2E8A-941C-53E0-26250D28DC63</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3A77D7E5-83BF-8BC6-8260-DDB4AC96FFD4"/>
+<colUsage columnID="BAC49B74-F9B9-3F72-C9A0-2E9A6E81CB3A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -43,10 +43,39 @@
 <dataTypeSize>17</dataTypeSize>
 <ownDataTypeParameters>17,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MAKE_YEAR" id="2B046C25-2C98-6F52-44EF-B743916A226D">
+<Attribute name="MAKE" id="B845B96B-5AB0-6167-76F3-BEE80DB0E33E">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-05-06 19:34:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vehicle's make
+]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODEL" id="643CC011-985F-BD71-95DA-43199D5730ED">
+<createdBy>yuehan</createdBy>
+<createdTime>2020-05-06 19:35:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Vehicle's model]]></commentInRDBMS>
+<ownerDesignName>proejct1</ownerDesignName>
+<engineerTo>
+<item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YEAR" id="2B046C25-2C98-6F52-44EF-B743916A226D">
 <createdBy>71918</createdBy>
 <createdTime>2020-04-05 19:08:38 UTC</createdTime>
-<commentInRDBMS><![CDATA[Vehicle's make-model-year]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Vehicle's year]]></commentInRDBMS>
 <ownerDesignName>proejct1</ownerDesignName>
 <engineerTo>
 <item key="E28E6978-9F36-538B-E2C5-AC8A7F65D732" value="true"/>

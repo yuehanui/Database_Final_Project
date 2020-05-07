@@ -7,6 +7,14 @@
 	  	<li class="nav-item">
 	      <a class="nav-link" href="dashboard.php">Dashboard</a>
 	    </li>
+	    <!-- Purchase (for customer account only)-->
+
+	    <?php
+	    	if ($_SESSION[$_COOKIE['username']][1]=="C"){
+			    echo'<li class="nav-item">
+			      <a class="nav-link" href="purchase-insurance.php">Purchase</a></li>';
+		}
+		?>
 	    <!-- Dropdown -->
 	    <li class="nav-item dropdown">
 	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">

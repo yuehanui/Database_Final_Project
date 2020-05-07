@@ -76,7 +76,7 @@
 
 			    <div class="form-check-inline">
 			      <label class="form-check-label" for="Married">
-			        <input type="radio" class="form-check-input" id="Married" name="martial" value="S" checked>Married
+			        <input type="radio" class="form-check-input" id="Married" name="martial" value="M" checked>Married
 			      </label>
 			    </div>
 			    <div class="form-check-inline">
@@ -103,7 +103,7 @@
 		    <!-- city -->
 		    <div class="form-group">
 		    	<label for="city">City:</label>
-		      <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required pattern="[a-zA-Z]{1,30}">
+		      <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required pattern="[a-zA-Z\s]{1,30}">
 		      <div class="invalid-feedback">
 		      	Contains only letters<br>
 		      	At most 30 characters<br>
@@ -179,7 +179,6 @@
 		    </div>
 		</form>
 
-		<form action="http://foo.com"><input name="say" id="say" value="Hi"><button>Send my greetings</button></form>
 
 </div><div class="col-sm-4 " >
  </div>

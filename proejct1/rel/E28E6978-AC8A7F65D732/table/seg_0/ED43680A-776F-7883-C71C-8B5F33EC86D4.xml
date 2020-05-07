@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7358FA4B-80AC-694C-C562-41A6AA634136" name="DRIVER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED43680A-776F-7883-C71C-8B5F33EC86D4" name="DRIVER">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>FA0C3F03-8D1A-6A64-2FD5-589255E47178</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="DRIVER_ID" id="44C52713-656F-277E-D7C6-9ED3405E3047">
+<Column name="DRIVER_ID" id="5E0C4F03-EA50-824F-80CA-878C56A19D5E">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Driver's unique identifier]]></commentInRDBMS>
 <generatorID>D847F334-770F-A705-CA85-3F16573F66B2</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LICENSE_NO" id="3369BBDC-C8C5-8297-C57B-90E0A0B437DE">
+<Column name="LICENSE_NO" id="0F61FF11-8C4A-29B9-F259-EFE2CD487BF8">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Driver's license number]]></commentInRDBMS>
 <generatorID>6A2DDA73-6911-A024-F326-7A4BEE1DC0AA</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -34,9 +34,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DRIVER_FNAME" id="47E48181-4879-2387-5A71-7284F8DD9FDD">
+<Column name="DRIVER_FNAME" id="7D36AB21-8EA4-889F-3C32-464292717EF5">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Driver's first name]]></commentInRDBMS>
 <generatorID>40636E29-2F7E-0EF5-402D-DC417AA3EAE8</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -47,9 +47,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DRIVER_LNAME" id="BC3E172D-7421-5E48-2D37-AC5EE0E6C938">
+<Column name="DRIVER_LNAME" id="B523A74E-1745-E12C-285C-A9E9C1F333FD">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Driver's last name]]></commentInRDBMS>
 <generatorID>F8B8331D-F89B-6A80-7B26-2092A7F57C6D</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -60,9 +60,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DRIVER_BDATE" id="F173EC66-DFF3-2D04-9CE4-E1FF0B12797D">
+<Column name="DRIVER_BDATE" id="395590F6-6EBD-A159-6F28-58ED4DCCAB8B">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <commentInRDBMS><![CDATA[Driver's birthdate]]></commentInRDBMS>
 <generatorID>1D083EFC-381C-46AC-5847-B6B35CFE5BF1</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
@@ -74,16 +74,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="1BCF0F5D-078E-BF25-F4CB-9ECF1B1506C1" name="DRIVER_PK">
+<ind_PK_UK id="16B112AA-289A-A4EA-E407-83C2CE905908" name="DRIVER_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>260506CA-CF31-DC8D-C73F-D461FA64802D</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="44C52713-656F-277E-D7C6-9ED3405E3047"/>
+<colUsage columnID="5E0C4F03-EA50-824F-80CA-878C56A19D5E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

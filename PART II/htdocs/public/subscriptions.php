@@ -15,37 +15,47 @@
 	if(request_is_post()) {
 
 		//$connect to the database
-		$username = $_COOKIE['username'];
 		$connection = admin_login('WDS_schema');
 
+		$c_id = h($_POST['c_id']);
+		$c_type = h($_POST['c_type']);
 		$parsed_data_h = [];
 		$parsed_data_a = [];
-		if ($_POST['c_type'] == 'H' or $_POST['c_type'] == 'AH'){
-			$select_list = ['h_start_date','h_end_date','h_premium','h_status'];
-			$select_list_str =select_list_to_str($select_list);
-			$query = "SELECT $select_list_str FROM home_insurance a JOIN customer b ON a.c_id = b.c_id WHERE b.username = '$username'";
+		if ($c_type == 'H' or $c_type == 'AH'){
+
+			$select_list_str = 'DATE_FORMAT(h_start_date,"%Y-%m-%d") as h_start_date,DATE_FORMAT(h_end_date,"%Y-%m-%d") as h_end_date,concat("$", round(h_premium)) as h_premium,h_status';
+			$query = "SELECT $select_list_str FROM home_insurance WHERE c_id = $c_id";
+			$result = mysqli_query($connection,$query);
+			while($line = mysqli_fetch_assoc($result)){
+				$type = array('Insurance Type' => "Home Insurance");
+				$asset = array('Assets' => print_assets($c_id,'H'));
+				$invoice = array('Invoice' => print_invoice($c_id,'H'));
+				array_push($parsed_data_h,($type + parse_data($line) + $asset + $invoice));
+
+			}
+			mysqli_free_result($result);
+
+			
+		} if($c_type == 'A' or $c_type == 'AH'){ 
+
+			$select_list_str = 'DATE_FORMAT(a_start_date,"%Y-%m-%d") as a_start_date,DATE_FORMAT(a_end_date,"%Y-%m-%d") as a_end_date,concat("$", round(a_premium)) as a_premium,a_status';
+			$query = "SELECT $select_list_str FROM auto_insurance WHERE c_id = $c_id";
 
 			$result = mysqli_query($connection,$query);
 			
-			
 			while($line = mysqli_fetch_assoc($result)){
-				array_push($parsed_data_h, array_merge(array('Insurance Type' => "Home Insurance"), parse_data($line)));
+				$type = array('Insurance Type' => "Auto Insurance");
+				$asset = array('Assets' => print_assets($c_id,'A'));
+				$invoice = array('Invoice' => print_invoice($c_id,'A'));
+				array_push($parsed_data_a,($type + parse_data($line) + $asset + $invoice));
 			}
-			
-		} if($_POST['c_type'] == 'A' or $_POST['c_type'] == 'AH'){ $select_list = ['a_start_date','a_end_date','a_premium','a_status'];
-			$select_list_str =select_list_to_str($select_list);
-			$query = "SELECT $select_list_str FROM auto_insurance a JOIN customer b ON a.c_id = b.c_id WHERE b.username = '$username'";
-
-			$result = mysqli_query($connection,$query);
-			
-			while($line = mysqli_fetch_assoc($result)){
-				array_push($parsed_data_a, array_merge(array('Insurance Type' => "Auto Insurance"), parse_data($line)));
-			}
+			mysqli_free_result($result);
 
 		}
+
+		$head_list = ['Insurance type','Start Date','End Date','Premium','Status','Assets','Invoice'];
 		$parsed_data = array_merge($parsed_data_h,$parsed_data_a);
-		$print_list =array_merge(['Insurance type'], select_list_to_print($select_list));
-			print_table($print_list, $parsed_data);
+			print_table($head_list, $parsed_data);
 
 
 

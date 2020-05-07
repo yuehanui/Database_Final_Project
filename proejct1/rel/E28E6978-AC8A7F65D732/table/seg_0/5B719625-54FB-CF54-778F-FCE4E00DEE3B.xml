@@ -1,18 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="228B7563-A232-AEE6-8713-A00D045D969A" name="A_PAYMENT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B719625-54FB-CF54-778F-FCE4E00DEE3B" name="H_PAYMENT">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<generatorID>CC9521F9-2C33-D1AD-D250-9D48924D8C88</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<generatorID>2BC1DAA4-8A06-A4B1-A84E-8418270F51C1</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="A_PAYMENT_ID" id="8C458F89-0557-3822-A58C-42E330978BE4">
+<Column name="H_PAYMENT_ID" id="DC58DAFC-CF40-1BAF-2027-2782C00C6C04">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Auto insurance's payment number]]></commentInRDBMS>
-<generatorID>DF1F650B-49CB-7D2C-9681-37BD9CEE3B8C</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurance's payment number]]></commentInRDBMS>
+<generatorID>400B7B3C-7E80-6CA8-498E-F06CE6C6914C</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -21,11 +21,11 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PAY_DATE" id="2BD63A2B-60C1-0604-BE1A-B78B9BDC7922">
+<Column name="H_PAY_DATE" id="85D8E4DC-C1FB-9DAC-7996-CE070119BC5E">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Auto insurance's payment date]]></commentInRDBMS>
-<generatorID>17D5B6BA-76DD-1B8F-ACE3-E2B932F6ECDE</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurance's payment date]]></commentInRDBMS>
+<generatorID>831208AB-D449-7470-85EA-ACB9D2BC425A</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,11 +33,11 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PAY_METHOD" id="E6309F30-66CD-9235-D700-A2FA2AE800D0">
+<Column name="H_PAY_METHOD" id="D235FF5A-36E7-FF6F-08C0-9F3B0D6935F1">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Auto insurance's method of payment. The pamyment method shoud be one of the following:“PayPal”, “Credit”, “Debit”, “Check”.]]></commentInRDBMS>
-<generatorID>72F63AC5-4399-AE42-95B3-3BFEC2263894</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurace's method of payment. The pamyment method shoud be one of the following:“PayPal”, “Credit”, “Debit”, “Check”.]]></commentInRDBMS>
+<generatorID>711F8B61-578E-1B1C-D117-2789B812CCE3</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,23 +46,24 @@
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_PAY_AMOUNT" id="7F27C65F-2678-7ADB-EDD1-1B3605453ACD">
+<Column name="H_PAY_AMOUNT" id="60560099-F010-31EC-76E0-A1D6DB6BCDDB">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<commentInRDBMS><![CDATA[Auto insurance's payment amount]]></commentInRDBMS>
-<generatorID>47278FE9-05B2-DCB3-9F54-D8362E2DE09A</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Home insurance's payment amount]]></commentInRDBMS>
+<generatorID>6D955A55-D60C-DB96-3A60-1D6768DFE744</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="A_INV_ID" id="48A16D3E-D8C2-ED3E-56B7-634056087519">
+<Column name="H_INV_ID" id="BF73D4BC-F01B-8041-0A52-6129FF67A2E3">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<generatorID>6A4FA27C-BC5B-21F6-5C8A-EACF6E722822</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<generatorID>014B1FC6-99D4-ED24-E379-D37D26F67744</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,32 +73,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="DC1D0995-CD3A-A711-4FBB-27E315956C2F" referredColumn="B004D939-B695-B807-8B63-55E379D9A634"/>
+<colAssociation fkAssociation="BA751848-75B4-5003-8232-13D54F10D94E" referredColumn="6E068B0E-7985-E277-044C-4A2F9F532578"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B047AE50-BC92-20D4-9997-999C8FA251DC" name="A_PAYMENT_PK">
+<ind_PK_UK id="684A53A5-06AB-5997-0CF9-F23477C8D2F5" name="H_PAYMENT_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<generatorID>A40150D3-01D3-8400-6E0D-95DF50C3D258</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<generatorID>B09B5031-6C0D-E578-4287-E02B99F432DB</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8C458F89-0557-3822-A58C-42E330978BE4"/>
+<colUsage columnID="DC58DAFC-CF40-1BAF-2027-2782C00C6C04"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="94075BBC-6446-92C1-DC50-83452D03BD2E" name="A_PAYMENT_A_INVOICE_FK">
+<ind_PK_UK id="9ACC25E5-78CE-A3D1-DE67-B7C00446CCF8" name="H_PAYMENT_H_INVOICE_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
-<generatorID>91A3D7F8-4D79-D9C4-F113-3F20D75FC9C3</generatorID>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
+<generatorID>90D1B5ED-AB49-29C9-F05E-BE781A854B33</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="48A16D3E-D8C2-ED3E-56B7-634056087519"/>
+<colUsage columnID="BF73D4BC-F01B-8041-0A52-6129FF67A2E3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -95,7 +95,7 @@ CREATE TABLE home (
     home_id    INT NOT NULL COMMENT 'Home''s ID',
     pur_date   DATETIME NOT NULL COMMENT 'Home''s purchase date',
     pur_value  DECIMAL(10, 2) NOT NULL COMMENT 'Home''s purchase value',
-    homearea   DECIMAL(6, 2) NOT NULL COMMENT 'Home area in sq.ft.',
+    homearea   DECIMAL(8, 2) NOT NULL COMMENT 'Home area in sq.ft.',
     hometype   VARCHAR(1) NOT NULL COMMENT 'Type of home. S,M,C,T representing Single family, Multi Family, Condominium, Town house respectively',
     auto_fire  TINYINT NOT NULL COMMENT 'Indicate whether there is a Auto fire notification',
     sec_sys    TINYINT NOT NULL COMMENT 'Indicate whether there is a home security system',
@@ -123,7 +123,9 @@ ALTER TABLE home_insurance ADD CONSTRAINT home_insurance_pk PRIMARY KEY ( c_id )
 CREATE TABLE vehicle (
     vehicle_id  BIGINT NOT NULL COMMENT 'The unique numerical identifier of the vehice',
     vin         VARCHAR(17) NOT NULL COMMENT 'Vehicle identification number.',
-    make_year   SMALLINT NOT NULL COMMENT 'Vehicle''s make-model-year',
+    make        VARCHAR(40) NOT NULL COMMENT 'Vehicle''s make',
+    model       VARCHAR(40) NOT NULL COMMENT 'Vehicle''s model',
+    year        SMALLINT NOT NULL COMMENT 'Vehicle''s year',
     v_status    VARCHAR(1) NOT NULL COMMENT 'Status of vehicle. “L”, “F”, or “O” representing “Leased”, Financed”, “and Owned’.',
     c_id        INT NOT NULL
 );

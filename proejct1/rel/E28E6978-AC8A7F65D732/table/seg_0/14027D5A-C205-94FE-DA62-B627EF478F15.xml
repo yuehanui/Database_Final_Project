@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D073D367-C176-A23B-168A-C40DC8904040" name="VEHICLE_DRIVER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14027D5A-C205-94FE-DA62-B627EF478F15" name="VEHICLE_DRIVER">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>10D6678F-AA72-44DB-1FD1-14E7C86A1395</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="DRIVER_ID" id="03B9FAC3-47CE-D713-C8F1-3500F6F83965">
+<Column name="DRIVER_ID" id="420B980C-CA58-AE2B-9105-B81783686AFA">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>F2EA59FC-E579-F2EC-E3FF-B77696F98562</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -21,12 +21,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="FF294512-16B8-3639-3FE6-28028C4A0646" referredColumn="44C52713-656F-277E-D7C6-9ED3405E3047"/>
+<colAssociation fkAssociation="B47AADCE-15C7-EECA-3767-DFF0D4C2104E" referredColumn="5E0C4F03-EA50-824F-80CA-878C56A19D5E"/>
 </associations>
 </Column>
-<Column name="VEHICLE_ID" id="5EB90652-BED7-DD02-E401-4B5EDAA8759C">
+<Column name="VEHICLE_ID" id="BD487310-7AB3-D729-A145-C496CEDB8363">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>3AD9AA8D-785D-BBE5-AA12-6E31BD50325E</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -37,44 +37,44 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="7C7CE38F-071A-FAEF-1214-35ABA0609A66" referredColumn="4B12AEB2-7EB0-A31E-A4F1-FFBE4ADF4405"/>
+<colAssociation fkAssociation="B44B328A-EA98-3C74-0D7E-7E95815EAC87" referredColumn="4709C4E7-7BAF-4FEA-99D8-046CC12F213E"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="A02129CC-613E-15D5-741C-30F0C0D95654" name="VEHICLE_DRIVER_PK">
+<ind_PK_UK id="FB7CA153-63D3-203F-EC1B-9C7DBD0E4B99" name="VEHICLE_DRIVER_PK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>1BB3F5A7-F519-EA89-1547-9CABCF7B30C8</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="03B9FAC3-47CE-D713-C8F1-3500F6F83965"/>
-<colUsage columnID="5EB90652-BED7-DD02-E401-4B5EDAA8759C"/>
+<colUsage columnID="420B980C-CA58-AE2B-9105-B81783686AFA"/>
+<colUsage columnID="BD487310-7AB3-D729-A145-C496CEDB8363"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3165285D-91CF-A0D0-BB31-D5F3A0F63649" name="VEHICLE_DRIVER_VEHICLE_FK">
+<ind_PK_UK id="B007A0B5-87D2-60D5-70AC-2FE047FBAC4D" name="VEHICLE_DRIVER_VEHICLE_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>561AD408-0BC9-34B6-8DF7-6E1CF3DD6ACC</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5EB90652-BED7-DD02-E401-4B5EDAA8759C"/>
+<colUsage columnID="BD487310-7AB3-D729-A145-C496CEDB8363"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3712ED15-5678-ACE7-A8DD-6C0804CDB92F" name="VEHICLE_DRIVER_DRIVER_FK">
+<ind_PK_UK id="A41354AA-29D0-F195-664D-1B0527B01688" name="VEHICLE_DRIVER_DRIVER_FK">
 <createdBy>yuehan</createdBy>
-<createdTime>2020-04-09 07:35:42 UTC</createdTime>
+<createdTime>2020-05-06 19:36:16 UTC</createdTime>
 <generatorID>7B55BCFA-56E3-AE53-3AE3-6993B3D3148F</generatorID>
 <ownerDesignName>proejct1</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="03B9FAC3-47CE-D713-C8F1-3500F6F83965"/>
+<colUsage columnID="420B980C-CA58-AE2B-9105-B81783686AFA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
