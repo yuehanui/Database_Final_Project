@@ -24,6 +24,8 @@
 		insert_homes($_POST, $c_id, $connection);
 		insert_home_invoice($_POST, $c_id, $connection, $preimum);
 	}
+	//close the connection
+	mysqli_close($connection);
 	echo ('<div class="text-center"<h3>Successfully subcribed</h3></div>');
 	redirect_in_time('dashboard.php',2);
 ?>

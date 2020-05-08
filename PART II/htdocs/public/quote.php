@@ -35,4 +35,7 @@
 	</div>
 	<div class="col-sm-4 "></div>
 </div>
+
+<!-- Common footer for all pages -->
+<?php include(SHARED_PATH . '/footer.php') ?>
 	

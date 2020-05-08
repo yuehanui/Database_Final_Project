@@ -7,19 +7,22 @@
 	$pswd = $_SESSION[$username][2];
 	$connection = staff_login($username, $pswd,'WDS_schema');
 
-	// retrieve all customer's infomation
-	$select_list = ['c_id', 'c_fname', 'c_lname', 'gender', 'martial_sta', 'c_street_ad', 'c_city', 'c_state', 'c_zipcode','c_type'];
-
-	$select_list_str = select_list_to_str($select_list);
-
-	$query = "SELECT $select_list_str FROM customer ";
-	$print_list = select_list_to_print($select_list);
+	// retrieve all customers' infomation
+	$select_list = 'c_id, c_fname, c_lname, gender, martial_sta, c_street_ad, c_city, c_state, c_zipcode,c_type';
+	$query = "SELECT $select_list FROM customer ";
 	$result = mysqli_query($connection,$query);
 
 	$parsed_data = [];
 	while($line = mysqli_fetch_assoc($result)){
-		array_push($parsed_data, parse_data($line));
+		$c_id = $line['c_id'];
+		array_push($parsed_data, parse_data($line)+delete_button('customer','c_id',$c_id));
 	}
-	print_table($print_list, $parsed_data);
+	
+	mysqli_free_result($result);
+	//close the connection
+	mysqli_close($connection);
+
+	$header_list = ['Customer ID','First Name', 'Last Name','Gender','Martial Status', 'Street Address', 'City','State','Zip Code','Subcriptions','Delete'];
+	print_table($header_list, $parsed_data);
 
 ?>

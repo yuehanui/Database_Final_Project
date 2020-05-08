@@ -22,13 +22,15 @@
 
 	$vehicle_id = $_POST["v_id"];
 	$head_list =['Driver\'s License No.','First Name','Last Name','Birthdate'];
-	$query = 'SELECT license_no, driver_fname,driver_lname,driver_bdate FROM driver a JOIN vehicle_driver b ON a.driver_id=b.driver_id WHERE b.vehicle_id = '.$vehicle_id;
+	$query = "SELECT license_no, driver_fname,driver_lname,DATE_FORMAT(driver_bdate,'%Y-%m-%d') as driver_bdate FROM driver a JOIN vehicle_driver b ON a.driver_id=b.driver_id WHERE b.vehicle_id = ".$vehicle_id;
 	$result = mysqli_query($connection,$query);
 	$parsed_data = [];
 	while($line = mysqli_fetch_assoc($result)){
 		array_push($parsed_data,parse_data($line));
 	}
 	mysqli_free_result($result);
+	//close the connection
+	mysqli_close($connection);
 	print_table($head_list, $parsed_data);
 ?>
 

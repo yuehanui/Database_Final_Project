@@ -48,6 +48,8 @@
 	}
 	$print_list = ['Customer ID','Invoice ID','Invoice Date','Due Date', 'Amount($)', 'Payments'];
 	mysqli_free_result($result);
+	//close the connection
+	mysqli_close($connection);
 	print_table($print_list, $parsed_data);
 ?>
 

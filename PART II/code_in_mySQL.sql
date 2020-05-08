@@ -143,43 +143,53 @@ ALTER TABLE vehicle_driver ADD CONSTRAINT vehicle_driver_pk PRIMARY KEY ( driver
 
 ALTER TABLE a_invoice
     ADD CONSTRAINT a_invoice_auto_insurance_fk FOREIGN KEY ( c_id )
-        REFERENCES auto_insurance ( c_id );
+        REFERENCES auto_insurance ( c_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE a_payment
     ADD CONSTRAINT a_payment_a_invoice_fk FOREIGN KEY ( a_inv_id )
-        REFERENCES a_invoice ( a_inv_id );
+        REFERENCES a_invoice ( a_inv_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE auto_insurance
     ADD CONSTRAINT auto_insurance_customer_fk FOREIGN KEY ( c_id )
-        REFERENCES customer ( c_id );
+        REFERENCES customer ( c_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE h_invoice
     ADD CONSTRAINT h_invoice_home_insurance_fk FOREIGN KEY ( c_id )
-        REFERENCES home_insurance ( c_id );
+        REFERENCES home_insurance ( c_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE h_payment
     ADD CONSTRAINT h_payment_h_invoice_fk FOREIGN KEY ( h_inv_id )
-        REFERENCES h_invoice ( h_inv_id );
+        REFERENCES h_invoice ( h_inv_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE home
     ADD CONSTRAINT home_home_insurance_fk FOREIGN KEY ( c_id )
-        REFERENCES home_insurance ( c_id );
+        REFERENCES home_insurance ( c_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE home_insurance
     ADD CONSTRAINT home_insurance_customer_fk FOREIGN KEY ( c_id )
-        REFERENCES customer ( c_id );
+        REFERENCES customer ( c_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE vehicle
     ADD CONSTRAINT vehicle_auto_insurance_fk FOREIGN KEY ( c_id )
-        REFERENCES auto_insurance ( c_id );
+        REFERENCES auto_insurance ( c_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE vehicle_driver
     ADD CONSTRAINT vehicle_driver_driver_fk FOREIGN KEY ( driver_id )
-        REFERENCES driver ( driver_id );
+        REFERENCES driver ( driver_id )
+        ON DELETE CASCADE;
 
 ALTER TABLE vehicle_driver
     ADD CONSTRAINT vehicle_driver_vehicle_fk FOREIGN KEY ( vehicle_id )
-        REFERENCES vehicle ( vehicle_id );
+        REFERENCES vehicle ( vehicle_id )
+        ON DELETE CASCADE;
 
 
 ALTER TABLE customer

@@ -41,6 +41,9 @@
 	mysqli_query($connection,$insert_payment);
 
 	echo('<div class="text-center">Successfully payed</div>');
+
+	//close the connection
+	mysqli_close($connection);
 	redirect_in_time("dashboard.php", 2);
 
 

@@ -23,14 +23,20 @@
 		$parsed_data_a = [];
 		if ($c_type == 'H' or $c_type == 'AH'){
 
-			$select_list_str = 'DATE_FORMAT(h_start_date,"%Y-%m-%d") as h_start_date,DATE_FORMAT(h_end_date,"%Y-%m-%d") as h_end_date,concat("$", round(h_premium)) as h_premium,h_status';
+			$select_list_str = 'c_id, DATE_FORMAT(h_start_date,"%Y-%m-%d") as h_start_date,DATE_FORMAT(h_end_date,"%Y-%m-%d") as h_end_date,concat("$", round(h_premium)) as h_premium,h_status';
 			$query = "SELECT $select_list_str FROM home_insurance WHERE c_id = $c_id";
 			$result = mysqli_query($connection,$query);
 			while($line = mysqli_fetch_assoc($result)){
 				$type = array('Insurance Type' => "Home Insurance");
 				$asset = array('Assets' => print_assets($c_id,'H'));
 				$invoice = array('Invoice' => print_invoice($c_id,'H'));
-				array_push($parsed_data_h,($type + parse_data($line) + $asset + $invoice));
+				//add delete option for staff
+				if (check_account_type()=="S"){
+					$c_id = $line['c_id'];
+					array_push($parsed_data_h,($type + parse_data($line) + $asset + $invoice + delete_button('home_insurance','c_id',$c_id)));
+				} else {
+					array_push($parsed_data_h,($type + parse_data($line) + $asset + $invoice));
+				}
 
 			}
 			mysqli_free_result($result);
@@ -38,7 +44,7 @@
 			
 		} if($c_type == 'A' or $c_type == 'AH'){ 
 
-			$select_list_str = 'DATE_FORMAT(a_start_date,"%Y-%m-%d") as a_start_date,DATE_FORMAT(a_end_date,"%Y-%m-%d") as a_end_date,concat("$", round(a_premium)) as a_premium,a_status';
+			$select_list_str = 'c_id,DATE_FORMAT(a_start_date,"%Y-%m-%d") as a_start_date,DATE_FORMAT(a_end_date,"%Y-%m-%d") as a_end_date,concat("$", round(a_premium)) as a_premium,a_status';
 			$query = "SELECT $select_list_str FROM auto_insurance WHERE c_id = $c_id";
 
 			$result = mysqli_query($connection,$query);
@@ -47,13 +53,23 @@
 				$type = array('Insurance Type' => "Auto Insurance");
 				$asset = array('Assets' => print_assets($c_id,'A'));
 				$invoice = array('Invoice' => print_invoice($c_id,'A'));
-				array_push($parsed_data_a,($type + parse_data($line) + $asset + $invoice));
+				//add delete option for staff
+				if (check_account_type()=="S"){
+					$c_id = $line['c_id'];
+					array_push($parsed_data_a,($type + parse_data($line) + $asset + $invoice+ delete_button('auto_insurance','c_id',$c_id)));
+				} else {
+					array_push($parsed_data_a,($type + parse_data($line) + $asset + $invoice));
+				}
 			}
 			mysqli_free_result($result);
 
 		}
 
-		$head_list = ['Insurance type','Start Date','End Date','Premium','Status','Assets','Invoice'];
+		$head_list = ['Insurance type','Customer ID','Start Date','End Date','Premium','Status','Assets','Invoice'];
+		//add delete option for staff
+		if (check_account_type()=="S"){
+			array_push($head_list, 'Delete');
+		}
 		$parsed_data = array_merge($parsed_data_h,$parsed_data_a);
 			print_table($head_list, $parsed_data);
 

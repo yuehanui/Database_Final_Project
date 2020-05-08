@@ -65,6 +65,8 @@
 	}
 	//free the result
 	mysqli_free_result($result);
+	//close the connection
+	mysqli_close($connection);
 
 	//calculate the amount due
 	$amount_due = $total_amount - $payed_amount;

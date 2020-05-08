@@ -71,6 +71,10 @@ function check_cookie(){
   }
   return false;
 }
+//return "C" if it is a customer account and "S" if its a staff account;
+function check_account_type(){
+  return $_SESSION[$_COOKIE['username']][1];
+}
 
 function unset_cookies(){
   setcookie('username', '', time() -3600);
@@ -836,6 +840,19 @@ function payment_button($c_id, $c_type){
 </form> ';
   return array("Payment" => $value);
 }
+
+
+// generat the button that submit a form to delete.php with the table name and the primary key
+function delete_button($table,$PK_name, $PK_value){
+  $value= '<form action="delete.php" method="post">
+      <input type="hidden" name="table" value="'.h($table).'">
+      <input type="hidden" name="PK_name" value="'.h($PK_name).'">
+      <input type="hidden" name="PK_value" value="'.h($PK_value).'">
+  <button type="submit" class="btn-link">Delete</button>
+</form> ';
+  return array("Delete" => $value);
+}
+
 
 
 

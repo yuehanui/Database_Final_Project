@@ -49,6 +49,8 @@
 	// print the data
 	$print_list = ['Invoice ID','Payment ID','Date','Pay Method', 'Amount($)'];
 	mysqli_free_result($result);
+	//close the connection
+	mysqli_close($connection);
 	print_table($print_list, $parsed_data);
 
 ?>
