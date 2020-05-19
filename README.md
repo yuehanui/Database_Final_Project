@@ -1,4 +1,4 @@
-# Database Final Project
+# https://github.com/yuehanui/Insurance-Company-RDBMS
 ##Part I
 
 ### Apr 8
