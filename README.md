@@ -1,3 +1,6 @@
+
+# Project Author : Johnny Wang & Shangxi Sun
+
 # https://github.com/yuehanui/Insurance-Company-RDBMS
 ##Part I
 
@@ -19,8 +22,8 @@
 ####Apr 26
 完成客户的个人信息显示和保险计划显示
 
-#### file directory
-private
+### file directory
+####private
 
 - initialize.php
 - function.php
@@ -37,7 +40,7 @@ private
     - customer.dashboard.php
     `support file for public/dashboard.php`
     
-public 
+####public 
 
 - index.php 
 - dashboard.php
@@ -59,4 +62,27 @@ public
 - Subscription.  
 `show customer's insurance plans`
    
+ 
+   
+### Summary of development environments:
+HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, Apache server, Oracle Data Modeler, Online RDBMS converter, Sublime Text
+Summary of features:
+-  Customer register
+-  Customer and staff login
+-  Duplicate login
+-  Purchase insurance
+-  Browse
+- Customer account deletion
+- Insurance record deletion
+- Hashed password with salt
+- Against SQL injection
+- Against Cross-site scripting attack – sanitize output ---- htmlspecialchars
+- Keep state for a user session ----- cookies and sessions
+### Summary of learning outcome:
+#### We will...
+- utilize the techniques about database structure learnt from class.
+- use different kinds of development environments such like PHP and MySQL
+#### efficiently.
+- demonstrate the ability to resolve same kind of problems that occur in the field.
+- be able to cooperate and share ideas with other group members.
    
