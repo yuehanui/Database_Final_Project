@@ -2,7 +2,7 @@
 # Project Author : Johnny Wang & Shangxi Sun
 
 # https://github.com/yuehanui/Insurance-Company-RDBMS
-##Part I
+## Part I
 
 ### Apr 8
 - VEHICLE 和 DRIVER 改成 many-to-many
@@ -14,7 +14,9 @@
 - 添加各种ID的最小值限制
 - HOME 的 SWIM_POOL, SEC_SYS,BASEMENT 的格式从 BINARY 改成 NUMERIC
 
+### Relational Model
 
+<img src="/Users/Yuehan/Desktop/GIT/insurance_company_business_managment_company/PART II/relation_model.png" alt="relation_model" style="zoom: 33%;" />
 
 ## Part II
 
@@ -35,11 +37,12 @@
     `the navigation bar for guest`
     - nav_user.php
     `the navigation bar for logged in user`
-    - staff-dashboard.php (空着)
+    - staff-dashboard.php 
     `support file for public/dashboard.php`
     - customer.dashboard.php
     `support file for public/dashboard.php`
     
+
 ####public 
 
 - index.php 
@@ -61,9 +64,9 @@
 `log user out by unset cookies`
 - Subscription.  
 `show customer's insurance plans`
-   
+  
  
-   
+  
 ### Summary of development environments:
 HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, Apache server, Oracle Data Modeler, Online RDBMS converter, Sublime Text
 Summary of features:
@@ -85,4 +88,4 @@ Summary of features:
 #### efficiently.
 - demonstrate the ability to resolve same kind of problems that occur in the field.
 - be able to cooperate and share ideas with other group members.
-   
+  
