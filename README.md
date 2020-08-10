@@ -16,7 +16,7 @@
 
 ### Relational Model
 
-<img src="/Users/Yuehan/Desktop/GIT/insurance_company_business_managment_company/PART II/relation_model.png" alt="relation_model" style="zoom: 33%;" />
+<img src="./PART II/relation_model.png" alt="relation_model" style="zoom: 33%;" />
 
 ## Part II
 
